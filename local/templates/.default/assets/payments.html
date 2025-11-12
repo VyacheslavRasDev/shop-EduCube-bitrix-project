@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Доставка и оплата - ЭдуКуб</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg" />
+<link rel="shortcut icon" href="./assets/favicons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="./assets/favicons/site.webmanifest" />
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<link href="css/main.0fcf.css" rel="stylesheet"></head>
+<body class="body body--white body--inner">
+<header class="header">
+    <div class="header__fixed">
+        <div class="container">
+            <div class="header-layout-regular">
+                <div class="header-layout-regular__cell header-layout-regular__cell--logo">
+                    <a href="./" class="logo-head logo-head--regular">
+                        <img src="./assets/images/logo-regular.svg" alt="Логотип">
+                    </a>
+                </div>
+                <div class="header-layout-regular__cell header-layout-regular__cell--main">
+                    <div class="header-grid header-grid--regular">
+                        <div class="header-grid__mobile">
+                            <button class="button-burger" data-menu="button">
+                                <svg class="button-burger__icon">
+                                    <use href="./assets/sprite.svg#icon-menu"></use>
+                                </svg>
+                                <span class="button-burger__text">
+                                Каталог
+                            </span>
+                            </button>
+                        </div>
+                        <div class="header-grid__nav">
+                            <nav class="header-nav header-nav--regular">
+                                <a href="" class="header-nav__link">
+                                    о компании
+                                </a>
+                                <a href="" class="header-nav__link">
+                                    оплата и доставка
+                                </a>
+                                <a href="" class="header-nav__link">
+                                    блог
+                                </a>
+                                <a href="" class="header-nav__link">
+                                    контакты
+                                </a>
+                            </nav>
+                        </div>
+                        <div class="header-grid__contacts">
+                            <div class="header-contacts">
+                                <a href="tel:+74951202186" class="header-contacts__link">
+                                    +7 (495) 120-21-86
+                                </a>
+                                <a href="mailto:info@educube.ru" class="header-contacts__link header-contacts__link--accent">
+                                    info@educube.ru
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-grid__toolbar">
+                            <a class="button-header" href="">
+                            <span class="button-header__counter" data-product-counter="block">
+                                2
+                            </span>
+                                <svg class="button-header__icon">
+                                    <use href="./assets/sprite.svg#icon-card"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="header-grid__separator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="menu-layout" data-menu="block" hidden="hidden">
+    <button class="menu-layout__button" data-menu="button">
+        <svg class="menu-layout__icon">
+            <use href="./assets/sprite.svg#icon-close"></use>
+        </svg>
+    </button>
+    <div class="menu-layout__content">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__col grid__col--5 grid__col-mob--4">
+                    <!--
+                    Когда мы в десктоп режиме, то при клике на ссылку справа открывается блок с выбором подкатегорий
+                    Когда мы в мобилке, то сразу проваливаемся на страницу каталога с родительской категорией.
+                    В макете вообще не было мобильного меню, и я решил сделать так, иначе оно слишком переусложнено и неудобно для использования
+                    -->
+                    <nav class="menu-sidebar">
+                        <a href="./catalog.html" data-menu-link="1" class="menu-sidebar__link" data-menu="link">
+                            Конструкторы
+                        </a>
+                        <a href="./catalog.html" data-menu-link="2" class="menu-sidebar__link" data-menu="link">
+                            Дроны
+                        </a>
+                        <a href="./catalog.html" data-menu-link="3" class="menu-sidebar__link" data-menu="link">
+                            3d принтеры
+                        </a>
+                        <a href="./catalog.html" data-menu-link="4" class="menu-sidebar__link" data-menu="link">
+                            Цифровые лаборатории
+                        </a>
+                        <a href="./catalog.html" data-menu-link="5" class="menu-sidebar__link" data-menu="link">
+                            Интерактивное оборудование
+                        </a>
+                        <a href="./catalog.html" data-menu-link="6" class="menu-sidebar__link" data-menu="link">
+                            Мебель
+                        </a>
+                        <a href="./catalog.html" data-menu-link="7" class="menu-sidebar__link" data-menu="link">
+                            Станки
+                        </a>
+                        <a href="./catalog.html" data-menu-link="8" class="menu-sidebar__link" data-menu="link">
+                            VR Оборудование
+                        </a>
+                        <a href="./catalog.html" data-menu-link="9" class="menu-sidebar__link" data-menu="link">
+                            Ноутбуки
+                        </a>
+                    </nav>
+                </div>
+                <div class="grid__col grid__col--6 mob-hidden">
+                    <div class="grid" hidden="hidden" data-menu="section" data-menu-section="1" id="menu-1">
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    Бренды
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        LEGO Education
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Tetrix
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        HiTechnic
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Mindsensors
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        ROBOT C
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    Возраст
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        начальная школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        средняя школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        детский сад
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid" hidden="hidden" data-menu="section" data-menu-section="2" id="menu-2">
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    Бренды
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        LEGO Education
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Tetrix
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        HiTechnic
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Mindsensors
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        ROBOT C
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    2 Возраст
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        начальная школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        средняя школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        детский сад
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid" hidden="hidden" data-menu="section" data-menu-section="3" id="menu-3">
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    3 Бренды
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        LEGO Education
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Tetrix
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        HiTechnic
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Mindsensors
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        ROBOT C
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    Возраст
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        начальная школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        средняя школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        детский сад
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid" hidden="hidden" data-menu="section" data-menu-section="4" id="menu-4">
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    4 Бренды
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        LEGO Education
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Tetrix
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        HiTechnic
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Mindsensors
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        ROBOT C
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    Возраст
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        начальная школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        средняя школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        детский сад
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid" hidden="hidden" data-menu="section" data-menu-section="5" id="menu-5">
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    5 Бренды
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        LEGO Education
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Tetrix
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        HiTechnic
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Mindsensors
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        ROBOT C
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    Возраст
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        начальная школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        средняя школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        детский сад
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid" hidden="hidden" data-menu="section" data-menu-section="6" id="menu-6">
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    6 Бренды
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        LEGO Education
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Tetrix
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        HiTechnic
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Mindsensors
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        ROBOT C
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    Возраст
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        начальная школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        средняя школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        детский сад
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid" hidden="hidden" data-menu="section" data-menu-section="7" id="menu-7">
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    7 Бренды
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        LEGO Education
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Tetrix
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        HiTechnic
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Mindsensors
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        ROBOT C
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    Возраст
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        начальная школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        средняя школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        детский сад
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid" hidden="hidden" data-menu="section" data-menu-section="8" id="menu-8">
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    8 Бренды
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        LEGO Education
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Tetrix
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        HiTechnic
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Mindsensors
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        ROBOT C
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    Возраст
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        начальная школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        средняя школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        детский сад
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid" hidden="hidden" data-menu="section" data-menu-section="9" id="menu-9">
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    9 Бренды
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        LEGO Education
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Tetrix
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        HiTechnic
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        Mindsensors
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        ROBOT C
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="grid__col grid__col--6">
+                            <div class="menu-stack">
+                                <h3 class="menu-stack__title">
+                                    Возраст
+                                </h3>
+                                <nav class="menu-stack__main">
+                                    <a href="" class="menu-stack__link">
+                                        начальная школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        средняя школа
+                                    </a>
+                                    <a href="" class="menu-stack__link">
+                                        детский сад
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__col grid__col--1 mob-hidden">
+                    <div class="picture-menu">
+                        <img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="1" alt="">
+                        <img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="2" alt="">
+                        <img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="3" alt="">
+                        <img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="4" alt="">
+                        <img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="5" alt="">
+                        <img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="6" alt="">
+                        <img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="7" alt="">
+                        <img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="8" alt="">
+                        <img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="9" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main class="main main--categories">
+    <div class="main__section mb-45 mbm-80">
+        <section class="section">
+    <div class="container">
+        <div class="grid">
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <h1 class="title title--page mb-20">
+                    Доставка и оплата
+                </h1>
+                <div class="editor editor--large mb-95 mbm-20">
+                    <p>
+                        Мы предлагаем широкий спектр вариантов оплаты и доставки в любой город России.
+                    </p>
+                </div>
+                <picture class="picture mob-visible">
+                    <img src="./assets/images/delivery-decor.png" alt="Декоративное изображение">
+                </picture>
+                <nav class="nav-inner">
+                    <a href="#section-1" class="nav-inner__link">
+                        Доставка
+                    </a>
+                    <a href="#section-2" class="nav-inner__link">
+                        Оплата
+                    </a>
+                </nav>
+            </div>
+            <div class="grid__col grid__col--6 grid__col-mob--4 mob-hidden">
+                <picture class="picture">
+                    <img src="./assets/images/delivery-decor.png" alt="Декоративное изображение">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </div>
+    <div class="main__section mb-150 mbt-100 mbm-80" id="section-1">
+        <section class="section overflow">
+    <div class="container">
+        <h2 class="title title--regular mb-45 mbm-20">
+            Доставка
+        </h2>
+        <div class="mb-90 mbm-40">
+            <div class="shipping-decor">
+                <div class="shipping-decor__content">
+                    <div class="grid">
+                        <div class="grid__col grid__col--6 grid__col-mob--4">
+                            <h3 class="title title--small mb-20">
+                                Курьерская доставка по Москве
+                            </h3>
+                            <div class="editor editor--large">
+                                <p>
+                                    Мы осуществляем курьерскую доставку товаров собственными силами по Москве.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shipping-decor__picture" style="background-image: url('./assets/images/decor-delivery.png')"></div>
+            </div>
+        </div>
+        <div class="grid mb-90 mbt-60 mbm-45">
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <h2 class="title title--small">
+                    Физические лица
+                </h2>
+            </div>
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <div class="editor editor--post">
+                    <ul>
+                        <li>
+                            Доставка осуществляется курьерскими службами СДЕК и Достависта
+                        </li>
+                        <li>
+                            По Москве в течение 1-3 дней, по России в течение 3-14 дней в зависимости от региона
+                        </li>
+                        <li>
+                            Посылка застрахована на полную стоимость
+                        </li>
+                        <li>
+                            Важно: проверьте целостность упаковки при курьере или в пункте выдачи заказа. При наличии повреждения зафиксируйте все в акте приема-передачи и сделайте фото и видео фиксацию повреждений.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="grid mb-90 mbt-60 mbm-45">
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <h2 class="title title--small">
+                    Юридические лица
+                </h2>
+            </div>
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <div class="editor editor--post">
+                    <h2>
+                        Самовывоз
+                    </h2>
+                    <p>
+                        Доступен с нашего склада по адресу: Московская область, Мытищинский район, деревня Сухарево, 135. Для оформления заявки на самовывоз обратитесь к вашему менеджеру для уточнения деталей и оформления пропуска.
+                    </p>
+                    <h2>
+                        Транспортные компании
+                    </h2>
+                    <ul>
+                        <li>
+                            Работаем с большинством транспортных компаний: СДЕК, ПЭК, Деловые Линии, DPD и другие
+                        </li>
+                        <li>
+                            Сроки доставки зависят от удаленности от Москвы и обычно занимают 3-14 дней
+                        </li>
+                        <li>
+                            Менеджер проинформирует о готовности заказа к отгрузке и вышлет трек-номер для отслеживания отправки, а также сообщит о поступлении заказа на пункт выдачи
+                        </li>
+                        <li>
+                            Во время передачи груза в транспортную компанию ведется видеофиксация, чтобы клиент мог требовать с Транспортной компании неустойку в случае порчи упаковки
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="grid mb-90 mbt-60 mbm-45">
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <h2 class="title title--small">
+                    Сроки отгрузки
+                </h2>
+            </div>
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <div class="editor editor--post">
+                    <ul>
+                        <li>
+                            При наличии продукции на нашем складе отгрузка осуществляется на следующий день после получения оплаты
+                        </li>
+                        <li>
+                            При необходимости производства сроки отгрузки могут занимать до 45 рабочих дней
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="grid mb-35 mbm-25">
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <h2 class="title title--small">
+                    Доставка в регионы России осуществляется партнёрами:
+                </h2>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="grid__col grid__col--3 grid__col grid__col-tab--4 grid__col-mob--2">
+                <article class="article-logo">
+                    <div class="article-logo__wrapper">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/1920x1080.jpg" alt="PickPoint">
+                        </picture>
+                    </div>
+                    <div class="article-logo__header">
+                        <h3 class="article-logo__title">
+                            PickPoint
+                        </h3>
+                    </div>
+                </article>
+            </div>
+            <div class="grid__col grid__col--3 grid__col grid__col-tab--4 grid__col-mob--2">
+                <article class="article-logo">
+                    <div class="article-logo__wrapper">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/1080x1080.jpg" alt="Стриж">
+                        </picture>
+                    </div>
+                    <div class="article-logo__header">
+                        <h3 class="article-logo__title">
+                            Стриж
+                        </h3>
+                    </div>
+                </article>
+            </div>
+            <div class="grid__col grid__col--3 grid__col grid__col-tab--4 grid__col-mob--2">
+                <article class="article-logo">
+                    <div class="article-logo__wrapper">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/1920x1080.jpg" alt="СДЭК">
+                        </picture>
+                    </div>
+                    <div class="article-logo__header">
+                        <h3 class="article-logo__title">
+                            СДЭК
+                        </h3>
+                    </div>
+                </article>
+            </div>
+            <div class="grid__col grid__col--3 grid__col grid__col-tab--4 grid__col-mob--2">
+                <article class="article-logo">
+                    <div class="article-logo__wrapper">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/1080x1080.jpg" alt="DPD">
+                        </picture>
+                    </div>
+                    <div class="article-logo__header">
+                        <h3 class="article-logo__title">
+                            DPD
+                        </h3>
+                    </div>
+                </article>
+            </div>
+            <div class="grid__col grid__col--3 grid__col grid__col-tab--4 grid__col-mob--2">
+                <article class="article-logo">
+                    <div class="article-logo__wrapper">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/1080x1920.jpg" alt="MaxiPost">
+                        </picture>
+                    </div>
+                    <div class="article-logo__header">
+                        <h3 class="article-logo__title">
+                            MaxiPost
+                        </h3>
+                    </div>
+                </article>
+            </div>
+            <div class="grid__col grid__col--3 grid__col grid__col-tab--4 grid__col-mob--2">
+                <article class="article-logo">
+                    <div class="article-logo__wrapper">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/1920x1080.jpg" alt="ПЭК">
+                        </picture>
+                    </div>
+                    <div class="article-logo__header">
+                        <h3 class="article-logo__title">
+                            ПЭК
+                        </h3>
+                    </div>
+                </article>
+            </div>
+            <div class="grid__col grid__col--3 grid__col grid__col-tab--4 grid__col-mob--2">
+                <article class="article-logo">
+                    <div class="article-logo__wrapper">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/1080x1920.jpg" alt="Boxberry">
+                        </picture>
+                    </div>
+                    <div class="article-logo__header">
+                        <h3 class="article-logo__title">
+                            Boxberry
+                        </h3>
+                    </div>
+                </article>
+            </div>
+            <div class="grid__col grid__col--3 grid__col grid__col-tab--4 grid__col-mob--2">
+                <article class="article-logo">
+                    <div class="article-logo__wrapper">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/1080x1080.jpg" alt="Спецсвязь">
+                        </picture>
+                    </div>
+                    <div class="article-logo__header">
+                        <h3 class="article-logo__title">
+                            Спецсвязь
+                        </h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </div>
+    <div class="main__section" id="section-2">
+        <section class="section">
+    <div class="container">
+        <h2 class="title title--regular mb-45 mbm-20">
+            Оплата
+        </h2>
+        <div class="grid mb-90 mbt-60 mbm-45">
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <h2 class="title title--small">
+                    Физические лица
+                </h2>
+            </div>
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <div class="editor editor--post">
+                    <p>
+                        Наличными или банковской картой в пункте выдачи заказа или курьеру
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="grid mb-90 mbt-60 mbm-45">
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <h2 class="title title--small">
+                    Юридические лица
+                </h2>
+            </div>
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <div class="editor editor--post">
+                    <p>
+                        После обращения на почту, по телефону или заявки на сайте, с вами свяжется менеджер для уточнения деталей, после чего вышлет договор и счет для безналичной оплаты. Оригинал счета и товарная накладная будут отправлены вместе с заказом.
+                    </p>
+                    <p>
+                        Случаи, в которых в связи с требованиями законодательства оплата не может быть принята и деньги будут в полном объеме возвращены оплатившему лицу: заказ оформлен юридическим лицом «A», а оплачивает юридическое лицо «B»; заказ оформлен юридическим лицом, а оплачивает физическое лицо.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="grid mb-90 mbt-60 mbm-45">
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <h2 class="title title--small">
+                    Возврат денежных средств
+                </h2>
+            </div>
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <div class="editor editor--post">
+                    <h2>
+                        Физические лица
+                    </h2>
+                    <p>
+                        Возврат товара без объяснения причин возможен в течение 14 дней со дня получения при условии сохранения заводских защитных наклеек и отсутствия следов использования товара. Гарантия на все товары в нашем интернет-магазине - 1 год с момента получения. Для осуществления возврата или в случае брака просим обратиться к нам любым удобным способом, мы поможем все оформить.
+                    </p>
+                    <h2>
+                        Юридические лица
+                    </h2>
+                    <p>
+                        Возврат товара надлежащего качества возможен на основании письма-обоснования с реквизитами для возврата средств. Возврат/замена по гарантии возможна в течение 12 мес с момента получения. Возврат средств происходит в течение 5 банковских рабочих дней.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="grid mb-90 mbt-60 mbm-45">
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <h2 class="title title--small">
+                    По любым вопросам:
+                </h2>
+            </div>
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <div class="editor editor--post">
+                    <ul>
+                        <li>
+                            Звоните на бесплатный номер <a href="tel:+74951202186">+7(495) 120-21-86</a>
+                        </li>
+                        <li>
+                            Пишите на почту <a href="mailto:info@educube.ru">info@educube.ru</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <article class="article-logo">
+                    <div class="article-logo__wrapper">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/1920x1080.jpg" alt="Яндекс.Деньги">
+                        </picture>
+                    </div>
+                    <div class="article-logo__header">
+                        <h3 class="article-logo__title">
+                            Электронные платежные системы (Яндекс.Деньги)
+                        </h3>
+                    </div>
+                </article>
+            </div>
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <article class="article-logo">
+                    <div class="article-logo__wrapper">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/1920x1080.jpg" alt="Оплата картой">
+                        </picture>
+                    </div>
+                    <div class="article-logo__header">
+                        <h3 class="article-logo__title">
+                            Оплата картой
+                        </h3>
+                    </div>
+                </article>
+            </div>
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <article class="article-logo">
+                    <div class="article-logo__wrapper">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/1920x1080.jpg" alt="Наличными курьеру">
+                        </picture>
+                    </div>
+                    <div class="article-logo__header">
+                        <h3 class="article-logo__title">
+                            Наличными курьеру (при получении заказа)
+                        </h3>
+                    </div>
+                </article>
+            </div>
+            <div class="grid__col grid__col--6 grid__col-mob--4">
+                <article class="article-logo">
+                    <div class="article-logo__wrapper">
+                        <picture class="article-logo__picture">
+                            <img src="./assets/images/1920x1080.jpg" alt="Оплата через любой банк (банковской квитанцией)">
+                        </picture>
+                    </div>
+                    <div class="article-logo__header">
+                        <h3 class="article-logo__title">
+                            Оплата через любой банк (банковской квитанцией)
+                        </h3>
+                        <p class="article-logo__caption">
+                            БЕЗ КОМИССИИ при оплате через Альфабанк.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="stack stack--footer">
+            <div class="grid footer-grid-main">
+                <div class="grid__col grid__col--3 grid__col-tab--12 grid__col-mob--4 order-mob-1">
+                    <div class="links-column links-column--main">
+                        <h2 class="links-column__logo">
+                            эдукуб
+                        </h2>
+                        <div class="links-column__stack mob-hidden">
+                            <a href="" class="link-footer">
+                                Telegram
+                            </a>
+                            <a href="" class="link-footer">
+                                WhatsApp
+                            </a>
+                            <a href="" class="link-footer">
+                                VK
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__col grid__col--3 grid__col-tab--4 grid__col-mob--2 order-mob-5">
+                    <div class="links-column links-column--regular">
+                        <h2 class="links-column__title">
+                            Каталог
+                        </h2>
+                        <div class="links-column__stack">
+                            <a href="" class="link-footer">
+                                Конструкторы
+                            </a>
+                            <a href="" class="link-footer">
+                                Дроны
+                            </a>
+                            <a href="" class="link-footer">
+                                3D-принтеры
+                            </a>
+                            <a href="" class="link-footer">
+                                Цифровые лаборатории
+                            </a>
+                            <a href="" class="link-footer">
+                                Интерактивное оборудование
+                            </a>
+                            <a href="" class="link-footer">
+                                Мебель
+                            </a>
+                            <a href="" class="link-footer">
+                                Станки
+                            </a>
+                            <a href="" class="link-footer">
+                                VR
+                            </a>
+                            <a href="" class="link-footer">
+                                Ноутбуки
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__col grid__col--3 grid__col-tab--4 grid__col-mob--2 order-mob-6">
+                    <div class="links-column links-column--regular">
+                        <h2 class="links-column__title">
+                            Меню
+                        </h2>
+                        <div class="links-column__stack">
+                            <a href="" class="link-footer">
+                                О компании
+                            </a>
+                            <a href="" class="link-footer">
+                                Оплата и доставка
+                            </a>
+                            <a href="" class="link-footer">
+                                Блог
+                            </a>
+                            <a href="" class="link-footer">
+                                Книги по робототехнике
+                            </a>
+                            <a href="" class="link-footer">
+                                Поддержка
+                            </a>
+                            <a href="" class="link-footer">
+                                Контакты
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__col grid__col-mob--4 mob-visible order-mob-3">
+                    <nav class="nav-footer">
+                        <a href="" class="link-footer">
+                            Telegram
+                        </a>
+                        <a href="" class="link-footer">
+                            WhatsApp
+                        </a>
+                        <a href="" class="link-footer">
+                            VK
+                        </a>
+                    </nav>
+                </div>
+                <div class="grid__col grid__col--3 grid__col-tab--4 order-mob-2">
+                    <div class="links-column links-column--regular">
+                        <h2 class="links-column__title">
+                            Контакты
+                        </h2>
+                        <div class="links-column__stack">
+                            <p class="link-footer">
+                                г. Москва, ул. 2-я Звенигородская, д. 13, стр. 15
+                            </p>
+                            <p class="link-footer">
+                                Юр. адресс: 111397, г. Москва, Федеративный пр-кт, д. 4, кв. 47 офис XI
+                            </p>
+                            <p class="link-footer">
+                                Телефон: <a href="+74951202186">+7 (495) 120-21-86</a>
+                            </p>
+                            <p class="link-footer">
+                                <a href="mailto:info@educube.ru">info@educube.ru</a>
+                            </p>
+                            <p class="link-footer">
+                                Мы работаем: c 09:00 до 18:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-footer-bottom">
+                <div class="grid__col grid__col--3 grid__col-mob--4 order-mob-2">
+                    <div class="caption-footer">
+                        <p>
+                            © 2013 - 2024 Educube.ru <br>
+                            Рекомендованный магазин <br class="mob-hidden">
+                            LEGO® Education в России.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid__col grid__col--9 grid__col-mob--4 order-mob-1">
+                    <nav class="nav-footer">
+                        <a href="" class="link-footer">
+                            Политика конфиденциальности
+                        </a>
+                        <a href="" class="link-footer">
+                            Оферта
+                        </a>
+                        <a href="" class="link-footer">
+                            Соглашение
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .temp-content {
+        columns: 2;
+    }
+
+    .temp-content > a {
+        width: 50%;
+        padding: 10px 0;
+        display: block;
+    }
+
+    .temp-content > p {
+        width: 50%;
+        padding: 10px 0;
+        display: block;
+    }
+</style>
+
+<section class="temp">
+    <div class="container">
+        <div class="temp-content">
+            <a href="./index.html">
+                Главная
+            </a>
+            <a href="./banners.html">
+                Баннеры
+            </a>
+            <a href="./categories.html">
+                Категории
+            </a>
+            <a href="./catalog.html">
+                Каталог
+            </a>
+            <a href="./product.html">
+                Продукт
+            </a>
+            <a href="./productShort.html">
+                Продукт (короткая)
+            </a>
+            <a href="./about.html">
+                О компании
+            </a>
+            <a href="./blog.html">
+                Блог
+            </a>
+            <a href="./post.html">
+                Статья
+            </a>
+            <a href="./payments.html">
+                Доставка
+            </a>
+            <a href="./contacts.html">
+                Контакты
+            </a>
+            <a href="./cart.html">
+                Корзина
+            </a>
+            <a href="./order.html">
+                Оформить заказ
+            </a>
+        </div>
+    </div>
+</section>
+
+<script defer src="bundle.js"></script></body>
+</html>

@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>ЭдуКуб</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96"/>
+	<link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg"/>
+	<link rel="shortcut icon" href="./assets/favicons/favicon.ico"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png"/>
+	<link rel="manifest" href="./assets/favicons/site.webmanifest"/>
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<link href="css/main.0fcf.css" rel="stylesheet">
+</head>
+<body class="body body--white body--front">
+	<header class="header" data-header="block">
+		<div class="header__static" data-header="static">
+			<div class="container">
+				<div class="header-layout-main">
+					<div class="header-layout-main__cell header-layout-main__cell--logo">
+						<picture class="logo-head logo-head--main">
+							<!-- Для экранов с шириной до 1320px -->
+							<source srcset="./assets/images/logo-regular.svg" media="(max-width: 1320px)">
+
+							<!-- Для экранов шире 1320px -->
+							<img src="./assets/images/logo-main.svg" alt="Логотип">
+						</picture>
+					</div>
+					<div class="header-layout-main__cell header-layout-main__cell--main">
+						<div class="stack stack--header">
+							<div class="header-grid header-grid--main">
+								<div class="header-grid__mobile">
+									<button class="button-burger" data-menu="button">
+										<svg class="button-burger__icon">
+											<use href="./assets/sprite.svg#icon-menu"></use>
+										</svg>
+										<span class="button-burger__text">
+                                    Каталог
+                                </span>
+									</button>
+								</div>
+								<div class="header-grid__nav">
+									<nav class="header-nav header-nav--main">
+										<a href="" class="header-nav__link">
+											о компании
+										</a>
+										<a href="" class="header-nav__link">
+											оплата и доставка
+										</a>
+										<a href="" class="header-nav__link">
+											блог
+										</a>
+										<a href="" class="header-nav__link">
+											контакты
+										</a>
+									</nav>
+								</div>
+								<div class="header-grid__contacts">
+									<div class="header-contacts header-contacts--main">
+										<a href="tel:+74951202186" class="header-contacts__link">
+											+7 (495) 120-21-86
+										</a>
+										<a href="mailto:info@educube.ru" class="header-contacts__link header-contacts__link--accent">
+											info@educube.ru
+										</a>
+									</div>
+								</div>
+								<div class="header-grid__toolbar">
+									<a class="button-header" href="">
+                                    <span class="button-header__counter" data-product-counter="block">
+                                        2
+                                    </span>
+										<svg class="button-header__icon">
+											<use href="./assets/sprite.svg#icon-card"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="header-grid__separator"></div>
+							</div>
+
+							<div class="title title--main tab-hidden">
+								<h1>
+									Робототехника и оборудование
+									<br>
+									для учебных учреждений с
+									<br>
+									гарантией лучшей цены
+								</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__fixed header__fixed--mobile header__fixed--hidden" data-header="fixed">
+			<div class="container">
+				<div class="header-layout-regular">
+					<div class="header-layout-regular__cell header-layout-regular__cell--logo">
+						<a href="./" class="logo-head logo-head--regular">
+							<img src="./assets/images/logo-regular.svg" alt="Логотип">
+						</a>
+					</div>
+					<div class="header-layout-regular__cell header-layout-regular__cell--main">
+						<div class="header-grid header-grid--regular">
+							<div class="header-grid__mobile">
+								<button class="button-burger" data-menu="button">
+									<svg class="button-burger__icon">
+										<use href="./assets/sprite.svg#icon-menu"></use>
+									</svg>
+									<span class="button-burger__text">
+                                    Каталог
+                                </span>
+								</button>
+							</div>
+							<div class="header-grid__nav">
+								<nav class="header-nav header-nav--regular">
+									<a href="" class="header-nav__link">
+										о компании
+									</a>
+									<a href="" class="header-nav__link">
+										оплата и доставка
+									</a>
+									<a href="" class="header-nav__link">
+										блог
+									</a>
+									<a href="" class="header-nav__link">
+										контакты
+									</a>
+								</nav>
+							</div>
+							<div class="header-grid__contacts">
+								<div class="header-contacts">
+									<a href="tel:+74951202186" class="header-contacts__link">
+										+7 (495) 120-21-86
+									</a>
+									<a href="mailto:info@educube.ru" class="header-contacts__link header-contacts__link--accent">
+										info@educube.ru
+									</a>
+								</div>
+							</div>
+							<div class="header-grid__toolbar">
+								<a class="button-header" href="">
+                                <span class="button-header__counter" data-product-counter="block">
+                                    2
+                                </span>
+									<svg class="button-header__icon">
+										<use href="./assets/sprite.svg#icon-card"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="header-grid__separator"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="menu-layout" data-menu="block" hidden="hidden">
+		<button class="menu-layout__button" data-menu="button">
+			<svg class="menu-layout__icon">
+				<use href="./assets/sprite.svg#icon-close"></use>
+			</svg>
+		</button>
+		<div class="menu-layout__content">
+			<div class="container">
+				<div class="grid">
+					<div class="grid__col grid__col--5 grid__col-mob--4">
+						<!--
+						Когда мы в десктоп режиме, то при клике на ссылку справа открывается блок с выбором подкатегорий
+						Когда мы в мобилке, то сразу проваливаемся на страницу каталога с родительской категорией.
+						В макете вообще не было мобильного меню, и я решил сделать так, иначе оно слишком переусложнено и неудобно для использования
+						-->
+						<nav class="menu-sidebar">
+							<a href="./catalog.html" data-menu-link="1" class="menu-sidebar__link" data-menu="link">
+								Конструкторы
+							</a>
+							<a href="./catalog.html" data-menu-link="2" class="menu-sidebar__link" data-menu="link">
+								Дроны
+							</a>
+							<a href="./catalog.html" data-menu-link="3" class="menu-sidebar__link" data-menu="link">
+								3d принтеры
+							</a>
+							<a href="./catalog.html" data-menu-link="4" class="menu-sidebar__link" data-menu="link">
+								Цифровые лаборатории
+							</a>
+							<a href="./catalog.html" data-menu-link="5" class="menu-sidebar__link" data-menu="link">
+								Интерактивное оборудование
+							</a>
+							<a href="./catalog.html" data-menu-link="6" class="menu-sidebar__link" data-menu="link">
+								Мебель
+							</a>
+							<a href="./catalog.html" data-menu-link="7" class="menu-sidebar__link" data-menu="link">
+								Станки
+							</a>
+							<a href="./catalog.html" data-menu-link="8" class="menu-sidebar__link" data-menu="link">
+								VR Оборудование
+							</a>
+							<a href="./catalog.html" data-menu-link="9" class="menu-sidebar__link" data-menu="link">
+								Ноутбуки
+							</a>
+						</nav>
+					</div>
+					<div class="grid__col grid__col--6 mob-hidden">
+						<div class="grid" hidden="hidden" data-menu="section" data-menu-section="1" id="menu-1">
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										Бренды
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											LEGO Education
+										</a>
+										<a href="" class="menu-stack__link">
+											Tetrix
+										</a>
+										<a href="" class="menu-stack__link">
+											HiTechnic
+										</a>
+										<a href="" class="menu-stack__link">
+											Mindsensors
+										</a>
+										<a href="" class="menu-stack__link">
+											ROBOT C
+										</a>
+									</nav>
+								</div>
+							</div>
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										Возраст
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											начальная школа
+										</a>
+										<a href="" class="menu-stack__link">
+											средняя школа
+										</a>
+										<a href="" class="menu-stack__link">
+											детский сад
+										</a>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="grid" hidden="hidden" data-menu="section" data-menu-section="2" id="menu-2">
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										Бренды
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											LEGO Education
+										</a>
+										<a href="" class="menu-stack__link">
+											Tetrix
+										</a>
+										<a href="" class="menu-stack__link">
+											HiTechnic
+										</a>
+										<a href="" class="menu-stack__link">
+											Mindsensors
+										</a>
+										<a href="" class="menu-stack__link">
+											ROBOT C
+										</a>
+									</nav>
+								</div>
+							</div>
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										2 Возраст
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											начальная школа
+										</a>
+										<a href="" class="menu-stack__link">
+											средняя школа
+										</a>
+										<a href="" class="menu-stack__link">
+											детский сад
+										</a>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="grid" hidden="hidden" data-menu="section" data-menu-section="3" id="menu-3">
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										3 Бренды
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											LEGO Education
+										</a>
+										<a href="" class="menu-stack__link">
+											Tetrix
+										</a>
+										<a href="" class="menu-stack__link">
+											HiTechnic
+										</a>
+										<a href="" class="menu-stack__link">
+											Mindsensors
+										</a>
+										<a href="" class="menu-stack__link">
+											ROBOT C
+										</a>
+									</nav>
+								</div>
+							</div>
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										Возраст
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											начальная школа
+										</a>
+										<a href="" class="menu-stack__link">
+											средняя школа
+										</a>
+										<a href="" class="menu-stack__link">
+											детский сад
+										</a>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="grid" hidden="hidden" data-menu="section" data-menu-section="4" id="menu-4">
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										4 Бренды
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											LEGO Education
+										</a>
+										<a href="" class="menu-stack__link">
+											Tetrix
+										</a>
+										<a href="" class="menu-stack__link">
+											HiTechnic
+										</a>
+										<a href="" class="menu-stack__link">
+											Mindsensors
+										</a>
+										<a href="" class="menu-stack__link">
+											ROBOT C
+										</a>
+									</nav>
+								</div>
+							</div>
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										Возраст
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											начальная школа
+										</a>
+										<a href="" class="menu-stack__link">
+											средняя школа
+										</a>
+										<a href="" class="menu-stack__link">
+											детский сад
+										</a>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="grid" hidden="hidden" data-menu="section" data-menu-section="5" id="menu-5">
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										5 Бренды
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											LEGO Education
+										</a>
+										<a href="" class="menu-stack__link">
+											Tetrix
+										</a>
+										<a href="" class="menu-stack__link">
+											HiTechnic
+										</a>
+										<a href="" class="menu-stack__link">
+											Mindsensors
+										</a>
+										<a href="" class="menu-stack__link">
+											ROBOT C
+										</a>
+									</nav>
+								</div>
+							</div>
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										Возраст
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											начальная школа
+										</a>
+										<a href="" class="menu-stack__link">
+											средняя школа
+										</a>
+										<a href="" class="menu-stack__link">
+											детский сад
+										</a>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="grid" hidden="hidden" data-menu="section" data-menu-section="6" id="menu-6">
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										6 Бренды
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											LEGO Education
+										</a>
+										<a href="" class="menu-stack__link">
+											Tetrix
+										</a>
+										<a href="" class="menu-stack__link">
+											HiTechnic
+										</a>
+										<a href="" class="menu-stack__link">
+											Mindsensors
+										</a>
+										<a href="" class="menu-stack__link">
+											ROBOT C
+										</a>
+									</nav>
+								</div>
+							</div>
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										Возраст
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											начальная школа
+										</a>
+										<a href="" class="menu-stack__link">
+											средняя школа
+										</a>
+										<a href="" class="menu-stack__link">
+											детский сад
+										</a>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="grid" hidden="hidden" data-menu="section" data-menu-section="7" id="menu-7">
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										7 Бренды
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											LEGO Education
+										</a>
+										<a href="" class="menu-stack__link">
+											Tetrix
+										</a>
+										<a href="" class="menu-stack__link">
+											HiTechnic
+										</a>
+										<a href="" class="menu-stack__link">
+											Mindsensors
+										</a>
+										<a href="" class="menu-stack__link">
+											ROBOT C
+										</a>
+									</nav>
+								</div>
+							</div>
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										Возраст
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											начальная школа
+										</a>
+										<a href="" class="menu-stack__link">
+											средняя школа
+										</a>
+										<a href="" class="menu-stack__link">
+											детский сад
+										</a>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="grid" hidden="hidden" data-menu="section" data-menu-section="8" id="menu-8">
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										8 Бренды
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											LEGO Education
+										</a>
+										<a href="" class="menu-stack__link">
+											Tetrix
+										</a>
+										<a href="" class="menu-stack__link">
+											HiTechnic
+										</a>
+										<a href="" class="menu-stack__link">
+											Mindsensors
+										</a>
+										<a href="" class="menu-stack__link">
+											ROBOT C
+										</a>
+									</nav>
+								</div>
+							</div>
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										Возраст
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											начальная школа
+										</a>
+										<a href="" class="menu-stack__link">
+											средняя школа
+										</a>
+										<a href="" class="menu-stack__link">
+											детский сад
+										</a>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="grid" hidden="hidden" data-menu="section" data-menu-section="9" id="menu-9">
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										9 Бренды
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											LEGO Education
+										</a>
+										<a href="" class="menu-stack__link">
+											Tetrix
+										</a>
+										<a href="" class="menu-stack__link">
+											HiTechnic
+										</a>
+										<a href="" class="menu-stack__link">
+											Mindsensors
+										</a>
+										<a href="" class="menu-stack__link">
+											ROBOT C
+										</a>
+									</nav>
+								</div>
+							</div>
+							<div class="grid__col grid__col--6">
+								<div class="menu-stack">
+									<h3 class="menu-stack__title">
+										Возраст
+									</h3>
+									<nav class="menu-stack__main">
+										<a href="" class="menu-stack__link">
+											начальная школа
+										</a>
+										<a href="" class="menu-stack__link">
+											средняя школа
+										</a>
+										<a href="" class="menu-stack__link">
+											детский сад
+										</a>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__col grid__col--1 mob-hidden">
+						<div class="picture-menu">
+							<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="1" alt="">
+							<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="2" alt="">
+							<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="3" alt="">
+							<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="4" alt="">
+							<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="5" alt="">
+							<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="6" alt="">
+							<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="7" alt="">
+							<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="8" alt="">
+							<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="9" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="main main--front">
+		<div class="main__section">
+			<section class="section tab-hidden">
+				<div class="container">
+					<nav class="nav">
+						<div class="nav__controls">
+							<button class="button-burger" data-menu="button">
+								<svg class="button-burger__icon">
+									<use href="./assets/sprite.svg#icon-menu"></use>
+								</svg>
+							</button>
+						</div>
+						<a href="" class="nav__link">
+							LEGO Education
+						</a>
+						<a href="" class="nav__link">
+							Dobot
+						</a>
+						<a href="" class="nav__link">
+							DJI
+						</a>
+						<a href="" class="nav__link">
+							Coex
+						</a>
+						<a href="" class="nav__link">
+							Наборы VEX
+						</a>
+						<a href="" class="nav__link">
+							Квадрокоптеры
+						</a>
+						<a href="" class="nav__link">
+							Мебель и поля
+						</a>
+						<a href="" class="nav__link">
+							Наборы Амперка
+						</a>
+					</nav>
+				</div>
+			</section>
+
+		</div>
+		<div class="main__section mb-60 mbm-25">
+			<section class="section">
+				<div class="container">
+					<article class="promo promo--large bg-green">
+						<div class="promo__header">
+							<h2 class="title title--regular">
+								Учись дома со Spike
+								<sup>TM</sup>
+								Prime
+							</h2>
+						</div>
+						<div class="promo__content">
+							<div class="editor editor--promo">
+								<p>
+									Lego Education
+									<br>
+									совместно с Фоксфорд
+								</p>
+							</div>
+							<div class="promo__control">
+								<a href="#" class="button button--middle button--blue-invert">
+									<span class="button__text">Запросить</span>
+								</a>
+							</div>
+						</div>
+						<div class="promo__footer">
+							<img src="./assets/images/logo-fox.svg" alt="">
+						</div>
+						<div class="promo__age">
+							<div class="age">
+                    <span class="age__text">
+                        10+ <br> лет
+                    </span>
+							</div>
+						</div>
+						<picture class="promo__picture">
+							<img src="./assets/images/1080x1080.jpg" alt="">
+						</picture>
+					</article>
+				</div>
+			</section>
+
+		</div>
+		<div class="main__section mb-180 mbt-150 mbm-100">
+			<section class="section">
+				<div class="container">
+					<div class="grid">
+						<div class="grid__col grid__col--3 grid__col-tab--6 grid__col-mob--4">
+							<article class="article-factoid">
+								<svg class="article-factoid__icon">
+									<use href="./assets/sprite.svg#icon-factoid-1"></use>
+								</svg>
+								<p class="article-factoid__text">
+									разработаем
+									<br>
+									техническое
+									<br>
+									задание
+								</p>
+							</article>
+						</div>
+						<div class="grid__col grid__col--3 grid__col-tab--6 grid__col-mob--4">
+							<article class="article-factoid">
+								<svg class="article-factoid__icon">
+									<use href="./assets/sprite.svg#icon-factoid-2"></use>
+								</svg>
+								<p class="article-factoid__text">
+									оплата 30/70
+									<br>
+									или полная
+									<br>
+									постоплата (44ФЗ)
+								</p>
+							</article>
+						</div>
+						<div class="grid__col grid__col--3 grid__col-tab--6 grid__col-mob--4">
+							<article class="article-factoid">
+								<svg class="article-factoid__icon">
+									<use href="./assets/sprite.svg#icon-factoid-3"></use>
+								</svg>
+								<p class="article-factoid__text">
+									Широкий выбор
+									<br>
+									способов
+									<br>
+									доставки
+								</p>
+							</article>
+						</div>
+						<div class="grid__col grid__col--3 grid__col-tab--6 grid__col-mob--4">
+							<article class="article-factoid">
+								<svg class="article-factoid__icon">
+									<use href="./assets/sprite.svg#icon-factoid-4"></use>
+								</svg>
+								<p class="article-factoid__text">
+									оплата при
+									<br>
+									получении для
+									<br>
+									физических лиц
+								</p>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<div class="main__section mb-130 mbt-150 mbm-100">
+			<section class="section">
+				<div class="container">
+					<h2 class="title title--regular mb-30 mbm-20">
+						Каталог
+					</h2>
+					<div class="catalog">
+						<div class="catalog__content">
+							<div class="grid">
+								<div class="grid__col grid__col--6 grid__col-mob--12">
+									<article class="article-category article-category--large-top">
+										<div class="article-category__head">
+											<h2 class="article-category__title">
+												Конструкторы
+											</h2>
+											<div class="article-category__caption">
+												<div class="editor-simple">
+													<p>
+														наборы для сборки и изучения различных моделей
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="article-category__content">
+											<div class="article-category__columns">
+												<div class="article-category__column">
+													<a class="article-category__link" href="">
+														LEGO Education
+													</a>
+													<a class="article-category__link" href="">
+														Tetrix
+													</a>
+													<a class="article-category__link" href="">
+														HiTechnic
+													</a>
+													<a class="article-category__link" href="">
+														Mindsensors
+													</a>
+													<a class="article-category__link" href="">
+														ROBOT C
+													</a>
+												</div>
+												<div class="article-category__column">
+													<a class="article-category__link" href="">
+														начальная школа
+													</a>
+													<a class="article-category__link" href="">
+														средняя школа
+													</a>
+													<a class="article-category__link" href="">
+														детский сад
+													</a>
+												</div>
+											</div>
+											<a href="#" class="article-category__button">
+                            <span>
+                                Смотреть все
+                            </span>
+												<svg>
+													<use href="./assets/sprite.svg#icon-next"></use>
+												</svg>
+											</a>
+										</div>
+										<picture class="article-category__picture">
+											<img src="./assets/images/1080x1080.jpg" alt="#">
+										</picture>
+									</article>
+								</div>
+								<div class="grid__col grid__col--6 grid__col-mob--12">
+									<article class="article-category article-category--large-top">
+										<div class="article-category__head">
+											<h2 class="article-category__title">
+												Дроны
+											</h2>
+											<div class="article-category__caption">
+												<div class="editor-simple">
+													<p>
+														квадрокоптеры для обучения полётам и сборке и аксессуары
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="article-category__content">
+											<div class="article-category__columns">
+												<div class="article-category__column">
+													<a class="article-category__link" href="">
+														DJI
+													</a>
+													<a class="article-category__link" href="">
+														Geprc
+													</a>
+													<a class="article-category__link" href="">
+														Flywoo
+													</a>
+													<a class="article-category__link" href="">
+														Betafpv
+													</a>
+													<a class="article-category__link" href="">
+														Happymodel
+													</a>
+												</div>
+												<div class="article-category__column">
+													<a class="article-category__link" href="">
+														начальная школа
+													</a>
+													<a class="article-category__link" href="">
+														средняя школа
+													</a>
+													<a class="article-category__link" href="">
+														детский сад
+													</a>
+												</div>
+											</div>
+											<a href="#" class="article-category__button">
+                            <span>
+                                Смотреть все
+                            </span>
+												<svg>
+													<use href="./assets/sprite.svg#icon-next"></use>
+												</svg>
+											</a>
+										</div>
+										<picture class="article-category__picture">
+											<img src="./assets/images/1080x1080.jpg" alt="#">
+										</picture>
+									</article>
+								</div>
+								<div class="grid__col grid__col--6 grid__col-mob--12">
+									<article class="article-category article-category--large-top">
+										<div class="article-category__head">
+											<h2 class="article-category__title">
+												3D-принтеры
+											</h2>
+											<div class="article-category__caption">
+												<div class="editor-simple">
+													<p>
+														устройства для печати объемных моделей и аксессуары
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="article-category__content">
+											<div class="article-category__columns">
+												<div class="article-category__column">
+													<a class="article-category__link" href="">
+														Tiertime
+													</a>
+													<a class="article-category__link" href="">
+														PRUSA
+													</a>
+													<a class="article-category__link" href="">
+														Anycubic
+													</a>
+													<a class="article-category__link" href="">
+														Wanhao
+													</a>
+												</div>
+												<div class="article-category__column">
+													<a class="article-category__link" href="">
+														начальная школа
+													</a>
+													<a class="article-category__link" href="">
+														средняя школа
+													</a>
+													<a class="article-category__link" href="">
+														детский сад
+													</a>
+												</div>
+											</div>
+											<a href="#" class="article-category__button">
+                            <span>
+                                Смотреть все
+                            </span>
+												<svg>
+													<use href="./assets/sprite.svg#icon-next"></use>
+												</svg>
+											</a>
+										</div>
+										<picture class="article-category__picture">
+											<img src="./assets/images/1080x1080.jpg" alt="#">
+										</picture>
+									</article>
+								</div>
+								<div class="grid__col grid__col--6 grid__col-mob--12">
+									<article class="article-category article-category--large-top">
+										<div class="article-category__head">
+											<h2 class="article-category__title">
+												Цифровые лаборатории
+											</h2>
+											<div class="article-category__caption">
+												<div class="editor-simple">
+													<p>
+														цифровые решения для проведения научных экспериментов
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="article-category__content">
+											<div class="article-category__columns">
+												<div class="article-category__column">
+													<a class="article-category__link" href="">
+														Robbo
+													</a>
+													<a class="article-category__link" href="">
+														SenseDisc
+													</a>
+													<a class="article-category__link" href="">
+														Relab
+													</a>
+													<a class="article-category__link" href="">
+														Унитех
+													</a>
+												</div>
+												<div class="article-category__column">
+													<a class="article-category__link" href="">
+														начальная школа
+													</a>
+													<a class="article-category__link" href="">
+														средняя школа
+													</a>
+													<a class="article-category__link" href="">
+														детский сад
+													</a>
+												</div>
+											</div>
+											<a href="#" class="article-category__button">
+                            <span>
+                                Смотреть все
+                            </span>
+												<svg>
+													<use href="./assets/sprite.svg#icon-next"></use>
+												</svg>
+											</a>
+										</div>
+										<picture class="article-category__picture">
+											<img src="./assets/images/1080x1080.jpg" alt="#">
+										</picture>
+									</article>
+								</div>
+								<div class="grid__col grid__col--6 grid__col-mob--12">
+									<article class="article-category article-category--large-bottom">
+										<div class="article-category__head">
+											<h2 class="article-category__title">
+												Интерактивное оборудование
+											</h2>
+											<div class="article-category__caption">
+												<div class="editor-simple">
+													<p>
+														интерактивные доски и панели, а также аксессуары для них
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="article-category__content">
+											<div class="article-category__columns">
+												<div class="article-category__column">
+													<a class="article-category__link" href="">
+														EliteBoard
+													</a>
+													<a class="article-category__link" href="">
+														NEWLINE
+													</a>
+													<a class="article-category__link" href="">
+														Next Touch
+													</a>
+													<a class="article-category__link" href="">
+														Smart.
+													</a>
+												</div>
+											</div>
+											<a href="#" class="article-category__button">
+                            <span>
+                                Смотреть все
+                            </span>
+												<svg>
+													<use href="./assets/sprite.svg#icon-next"></use>
+												</svg>
+											</a>
+										</div>
+										<picture class="article-category__picture">
+											<img src="./assets/images/1080x1080.jpg" alt="#">
+										</picture>
+									</article>
+								</div>
+								<div class="grid__col grid__col--6 grid__col-mob--12">
+									<article class="article-category article-category--large-bottom">
+										<div class="article-category__head">
+											<h2 class="article-category__title">
+												Мебель
+											</h2>
+											<div class="article-category__caption">
+												<div class="editor-simple">
+													<p>
+														школьная и лабораторная мебель
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="article-category__content">
+											<div class="article-category__columns">
+												<div class="article-category__column">
+													<a class="article-category__link" href="">
+														LEGO Education
+													</a>
+													<a class="article-category__link" href="">
+														MACOP
+													</a>
+												</div>
+											</div>
+											<a href="#" class="article-category__button">
+                            <span>
+                                Смотреть все
+                            </span>
+												<svg>
+													<use href="./assets/sprite.svg#icon-next"></use>
+												</svg>
+											</a>
+										</div>
+										<picture class="article-category__picture">
+											<img src="./assets/images/1080x1080.jpg" alt="#">
+										</picture>
+									</article>
+								</div>
+								<div class="grid__col grid__col--4 grid__col-mob--12">
+									<article class="article-category article-category--small">
+										<div class="article-category__head">
+											<h2 class="article-category__title">
+												Станки
+											</h2>
+											<div class="article-category__caption">
+												<div class="editor-simple">
+													<p>
+														оборудование для резки и гравировки
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="article-category__content">
+											<div class="article-category__columns">
+												<div class="article-category__column">
+													<a class="article-category__link" href="">
+														Makeblock
+													</a>
+													<a class="article-category__link" href="">
+														TOOCAA
+													</a>
+												</div>
+											</div>
+											<a href="#" class="article-category__button">
+                            <span>
+                                Смотреть все
+                            </span>
+												<svg>
+													<use href="./assets/sprite.svg#icon-next"></use>
+												</svg>
+											</a>
+										</div>
+										<picture class="article-category__picture">
+											<img src="./assets/images/1080x1080.jpg" alt="#">
+										</picture>
+									</article>
+								</div>
+								<div class="grid__col grid__col--4 grid__col-mob--12">
+									<article class="article-category article-category--small">
+										<div class="article-category__head">
+											<h2 class="article-category__title">
+												VR
+											</h2>
+											<div class="article-category__caption">
+												<div class="editor-simple">
+													<p>
+														устройства для виртуальной реальности
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="article-category__content">
+											<div class="article-category__columns">
+												<div class="article-category__column">
+													<a class="article-category__link" href="">
+														PolyVR
+													</a>
+												</div>
+											</div>
+											<a href="#" class="article-category__button">
+                            <span>
+                                Смотреть все
+                            </span>
+												<svg>
+													<use href="./assets/sprite.svg#icon-next"></use>
+												</svg>
+											</a>
+										</div>
+										<picture class="article-category__picture">
+											<img src="./assets/images/1080x1080.jpg" alt="#">
+										</picture>
+									</article>
+								</div>
+								<div class="grid__col grid__col--4 grid__col-mob--12">
+									<article class="article-category article-category--small">
+										<div class="article-category__head">
+											<h2 class="article-category__title">
+												Ноутбуки
+											</h2>
+											<div class="article-category__caption">
+												<div class="editor-simple">
+													<p>
+														компьютеры и комплектующие для обучения и работы
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="article-category__content">
+											<div class="article-category__columns">
+												<div class="article-category__column">
+													<a class="article-category__link" href="">
+														ACER
+													</a>
+													<a class="article-category__link" href="">
+														GIGABYTE
+													</a>
+												</div>
+											</div>
+											<a href="#" class="article-category__button">
+                            <span>
+                                Смотреть все
+                            </span>
+												<svg>
+													<use href="./assets/sprite.svg#icon-next"></use>
+												</svg>
+											</a>
+										</div>
+										<picture class="article-category__picture">
+											<img src="./assets/images/1080x1080.jpg" alt="#">
+										</picture>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__pagination">
+							<button class="button button--small button--grey-invert">
+                    <span class="button__text">
+                        Показать все категории
+                    </span>
+								<svg class="button__icon">
+									<use href="./assets/sprite.svg#icon-drop"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<div class="main__section mb-135 mbt-150 mbm-100">
+			<section class="section">
+				<div class="container">
+					<h2 class="title title--regular mb-30 mbm-20">
+						Рекомендуемые товары
+					</h2>
+					<div class="swiper slider-recommended" data-slider="recommended">
+						<div class="swiper-wrapper slider-recommended__wrapper">
+							<div class="swiper-slide slider-recommended__slide">
+								<article class="article-product">
+									<div class="article-product__header">
+										<a href="" class="article-product__title">
+											Набор LEGO® Education BricQ Motion Старт
+										</a>
+									</div>
+									<a href="" class="article-product__picture">
+										<img src="./assets/images/1920x1080.jpg" alt="Набор LEGO® Education BricQ Motion Старт">
+									</a>
+									<div class="article-product__footer">
+										<div class="price-preview">
+											<p class="price-preview__status">
+												В наличии
+											</p>
+											<div class="price-preview__main">
+												<strong>
+													56 200₽
+												</strong>
+												<del>
+													87 200₽
+												</del>
+											</div>
+										</div>
+										<!-- значение параметра - id товара, если он в корзине при обновлении страницы, меня текст на "в корзине" -->
+										<button class="article-product__button" data-product="123">
+											положить
+											<br>
+											в корзину
+										</button>
+									</div>
+								</article>
+							</div>
+							<div class="swiper-slide slider-recommended__slide">
+								<article class="article-product">
+									<div class="article-product__header">
+										<a href="" class="article-product__title">
+											LEGO MINDSTORMS EV3 45544 базовый набор
+										</a>
+									</div>
+									<a href="" class="article-product__picture">
+										<img src="./assets/images/1920x1080.jpg" alt="Набор LEGO® Education BricQ Motion Старт">
+									</a>
+									<div class="article-product__footer">
+										<div class="price-preview">
+											<p class="price-preview__status">
+												В наличии
+											</p>
+											<div class="price-preview__main">
+												<strong>
+													56 200₽
+												</strong>
+											</div>
+										</div>
+										<button class="article-product__button">
+											положить
+											<br>
+											в корзину
+										</button>
+									</div>
+								</article>
+							</div>
+							<div class="swiper-slide slider-recommended__slide">
+								<article class="article-product">
+									<div class="article-product__header">
+										<a href="" class="article-product__title">
+											LEGO MINDSTORMS EV3 45544 базовый набор
+										</a>
+									</div>
+									<a href="" class="article-product__picture">
+										<img src="./assets/images/1920x1080.jpg" alt="Набор LEGO® Education BricQ Motion Старт">
+									</a>
+									<div class="article-product__footer">
+										<div class="price-preview">
+											<p class="price-preview__status">
+												В наличии
+											</p>
+											<div class="price-preview__main">
+												<strong>
+													56 200₽
+												</strong>
+											</div>
+										</div>
+										<button class="article-product__button">
+											положить
+											<br>
+											в корзину
+										</button>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<div class="main__section mb-125 mbt-160 mbm-100">
+			<section class="section">
+				<div class="container">
+					<div class="grid mb-35 mbm-25">
+						<div class="grid__col grid__col--6 grid__col-mob--4">
+							<h2 class="title title--regular">
+								Мы растим в России новое поколение гениальных инженеров
+							</h2>
+						</div>
+					</div>
+					<div class="caption-line mb-40 mbm-35">
+            <span class="caption-line__text">
+                Наша миссия
+            </span>
+					</div>
+					<div class="grid mb-85 mbt-65 mbm-50">
+						<div class="grid__col grid__col--6 grid__col-tab--9 grid__col-mob--4">
+							<div class="editor editor--large">
+								<p>
+									Мы работаем для того, чтобы в России подрастало новое поколение талантливых и влюблённых в своё дело юных инженеров,
+									робототехников и пилотов.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid">
+						<div class="grid__col grid__col--4 grid__col-tab--12 grid__col-mob--12">
+							<article class="article-feature">
+								<svg class="article-feature__icon">
+									<use href="./assets/sprite.svg#icon-handshake"></use>
+								</svg>
+								<div class="article-feature__content">
+									<h3 class="article-feature__title">
+										Используем опыт
+										<br>
+										2.500 проектов
+									</h3>
+									<div class="article-feature__caption">
+										<div class="editor-simple">
+											<p>
+												Мы реализовали более 2.500 проектов для образовательных учреждений в России
+											</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="grid__col grid__col--4 grid__col-tab--12 grid__col-mob--12">
+							<article class="article-feature">
+								<svg class="article-feature__icon">
+									<use href="./assets/sprite.svg#icon-drone"></use>
+								</svg>
+								<div class="article-feature__content">
+									<h3 class="article-feature__title">
+										Сами производим
+										<br>
+										продукцию
+									</h3>
+									<div class="article-feature__caption">
+										<div class="editor-simple">
+											<p>
+												Производим квадрокоптеры для целей образования под брендом LBS TT
+											</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="grid__col grid__col--4 grid__col-tab--12 grid__col-mob--12">
+							<article class="article-feature">
+								<svg class="article-feature__icon">
+									<use href="./assets/sprite.svg#icon-education"></use>
+								</svg>
+								<div class="article-feature__content">
+									<h3 class="article-feature__title">
+										Создаём программы
+										<br>
+										и методики
+									</h3>
+									<div class="article-feature__caption">
+										<div class="editor-simple">
+											<p>
+												Разрабатываем программы и методики обучения в сфере робототехники и дронов
+											</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<div class="main__section mb-95 mbt-150 mbm-100">
+			<section class="section">
+				<div class="container">
+					<div class="grid">
+						<div class="grid__col grid__col--4 grid__col-tab--6 grid__col-mob--4">
+							<article class="article-partner">
+								<div class="article-partner__header">
+									<div class="article-partner__wrapper">
+										<picture class="article-partner__picture">
+											<img src="./assets/images/1920x1080.jpg" alt="Правительство Москвы">
+										</picture>
+									</div>
+									<h3 class="article-partner__title">
+										Правительство
+										<br>
+										Москвы
+									</h3>
+								</div>
+								<div class="article-partner__main">
+									<div class="editor-simple">
+										<p>
+											Реализовали более 2.500 проектов для образовательных учреждений в России
+										</p>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="grid__col grid__col--4 grid__col-tab--6 grid__col-mob--4">
+							<article class="article-partner">
+								<div class="article-partner__header">
+									<div class="article-partner__wrapper">
+										<picture class="article-partner__picture">
+											<img src="./assets/images/1080x1920.jpg" alt="Точка роста">
+										</picture>
+									</div>
+									<h3 class="article-partner__title">
+										Точка роста
+									</h3>
+								</div>
+								<div class="article-partner__main">
+									<div class="editor-simple">
+										<p>
+											Реализовали более 2.500 проектов для образовательных учреждений в России
+										</p>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="grid__col grid__col--4 grid__col-tab--6 grid__col-mob--4">
+							<article class="article-partner">
+								<div class="article-partner__header">
+									<div class="article-partner__wrapper">
+										<picture class="article-partner__picture">
+											<img src="./assets/images/1080x1080.jpg" alt="Техноград">
+										</picture>
+									</div>
+									<h3 class="article-partner__title">
+										Техноград
+									</h3>
+								</div>
+								<div class="article-partner__main">
+									<div class="editor-simple">
+										<p>
+											Реализовали более 2.500 проектов для образовательных учреждений в России
+										</p>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="grid__col grid__col--4 grid__col-tab--6 grid__col-mob--4">
+							<article class="article-partner">
+								<div class="article-partner__header">
+									<div class="article-partner__wrapper">
+										<picture class="article-partner__picture">
+											<img src="./assets/images/1920x1080.jpg" alt="Правительство Москвы">
+										</picture>
+									</div>
+									<h3 class="article-partner__title">
+										Правительство
+										<br>
+										Москвы
+									</h3>
+								</div>
+								<div class="article-partner__main">
+									<div class="editor-simple">
+										<p>
+											Реализовали более 2.500 проектов для образовательных учреждений в России
+										</p>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="grid__col grid__col--4 grid__col-tab--6 grid__col-mob--4">
+							<article class="article-partner">
+								<div class="article-partner__header">
+									<div class="article-partner__wrapper">
+										<picture class="article-partner__picture">
+											<img src="./assets/images/1080x1920.jpg" alt="Точка роста">
+										</picture>
+									</div>
+									<h3 class="article-partner__title">
+										Точка роста
+									</h3>
+								</div>
+								<div class="article-partner__main">
+									<div class="editor-simple">
+										<p>
+											Реализовали более 2.500 проектов для образовательных учреждений в России
+										</p>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="grid__col grid__col--4 grid__col-tab--6 grid__col-mob--4">
+							<article class="article-partner">
+								<div class="article-partner__header">
+									<div class="article-partner__wrapper">
+										<picture class="article-partner__picture">
+											<img src="./assets/images/1080x1080.jpg" alt="Техноград">
+										</picture>
+									</div>
+									<h3 class="article-partner__title">
+										Техноград
+									</h3>
+								</div>
+								<div class="article-partner__main">
+									<div class="editor-simple">
+										<p>
+											Реализовали более 2.500 проектов для образовательных учреждений в России
+										</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<div class="main__section">
+			<section class="section">
+				<div class="container">
+					<div class="grid">
+						<div class="grid__col grid__col--6 grid__col-tab--12 grid__col-mob--4 mbt-20 mbm-10">
+							<h2 class="title title--regular mb-40 mbm-20">
+								Оставьте заявку
+							</h2>
+							<div class="editor editor--middle">
+								<ol>
+									<li>
+										Разрабатываем проекты под
+										<br class="tab-hidden">
+										нужный бюджет и в строгом
+										<br class="tab-hidden">
+										соответствии с ТЗ
+									</li>
+									<li>
+										Поможем со всей необходимой
+										<br class="tab-hidden">
+										документацией, вся продукция
+										<br class="tab-hidden">
+										сертифицирована
+									</li>
+									<li>
+										Учитываем все методические
+										<br class="tab-hidden">
+										рекомендации Минпросвещения
+									</li>
+								</ol>
+							</div>
+						</div>
+						<div class="grid__col grid__col--6 grid__col-tab--12 grid__col-mob--4">
+							<!-- Уходит FormData по адресу, указанному в action, автоматически собирает все input и textarea -->
+							<form action="./action.php" class="form-contact" data-form="block">
+								<div class="form-contact__content">
+									<label class="textarea">
+										<p class="textarea__title">
+											Сообщение
+										</p>
+										<textarea required class="textarea__field" name="message" placeholder="Опишите ваш запрос"></textarea>
+									</label>
+									<label class="input">
+										<p class="input__title">
+											Телефон
+										</p>
+										<input required type="text" data-mask="phone" name="phone" class="input__field" placeholder="+7 (---) --- -- --">
+									</label>
+								</div>
+								<div class="form-contact__toolbar">
+									<button type="submit" class="button button--large button--blue">
+                            <span class="button__text" data-form="message">
+                                Подобрать оборудование
+                            </span>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="stack stack--footer">
+				<div class="grid footer-grid-main">
+					<div class="grid__col grid__col--3 grid__col-tab--12 grid__col-mob--4 order-mob-1">
+						<div class="links-column links-column--main">
+							<h2 class="links-column__logo">
+								эдукуб
+							</h2>
+							<div class="links-column__stack mob-hidden">
+								<a href="" class="link-footer">
+									Telegram
+								</a>
+								<a href="" class="link-footer">
+									WhatsApp
+								</a>
+								<a href="" class="link-footer">
+									VK
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="grid__col grid__col--3 grid__col-tab--4 grid__col-mob--2 order-mob-5">
+						<div class="links-column links-column--regular">
+							<h2 class="links-column__title">
+								Каталог
+							</h2>
+							<div class="links-column__stack">
+								<a href="" class="link-footer">
+									Конструкторы
+								</a>
+								<a href="" class="link-footer">
+									Дроны
+								</a>
+								<a href="" class="link-footer">
+									3D-принтеры
+								</a>
+								<a href="" class="link-footer">
+									Цифровые лаборатории
+								</a>
+								<a href="" class="link-footer">
+									Интерактивное оборудование
+								</a>
+								<a href="" class="link-footer">
+									Мебель
+								</a>
+								<a href="" class="link-footer">
+									Станки
+								</a>
+								<a href="" class="link-footer">
+									VR
+								</a>
+								<a href="" class="link-footer">
+									Ноутбуки
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="grid__col grid__col--3 grid__col-tab--4 grid__col-mob--2 order-mob-6">
+						<div class="links-column links-column--regular">
+							<h2 class="links-column__title">
+								Меню
+							</h2>
+							<div class="links-column__stack">
+								<a href="" class="link-footer">
+									О компании
+								</a>
+								<a href="" class="link-footer">
+									Оплата и доставка
+								</a>
+								<a href="" class="link-footer">
+									Блог
+								</a>
+								<a href="" class="link-footer">
+									Книги по робототехнике
+								</a>
+								<a href="" class="link-footer">
+									Поддержка
+								</a>
+								<a href="" class="link-footer">
+									Контакты
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="grid__col grid__col-mob--4 mob-visible order-mob-3">
+						<nav class="nav-footer">
+							<a href="" class="link-footer">
+								Telegram
+							</a>
+							<a href="" class="link-footer">
+								WhatsApp
+							</a>
+							<a href="" class="link-footer">
+								VK
+							</a>
+						</nav>
+					</div>
+					<div class="grid__col grid__col--3 grid__col-tab--4 order-mob-2">
+						<div class="links-column links-column--regular">
+							<h2 class="links-column__title">
+								Контакты
+							</h2>
+							<div class="links-column__stack">
+								<p class="link-footer">
+									г. Москва, ул. 2-я Звенигородская, д. 13, стр. 15
+								</p>
+								<p class="link-footer">
+									Юр. адресс: 111397, г. Москва, Федеративный пр-кт, д. 4, кв. 47 офис XI
+								</p>
+								<p class="link-footer">
+									Телефон:
+									<a href="+74951202186">+7 (495) 120-21-86</a>
+								</p>
+								<p class="link-footer">
+									<a href="mailto:info@educube.ru">info@educube.ru</a>
+								</p>
+								<p class="link-footer">
+									Мы работаем: c 09:00 до 18:00
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid grid-footer-bottom">
+					<div class="grid__col grid__col--3 grid__col-mob--4 order-mob-2">
+						<div class="caption-footer">
+							<p>
+								© 2013 - 2024 Educube.ru
+								<br>
+								Рекомендованный магазин
+								<br class="mob-hidden">
+								LEGO® Education в России.
+							</p>
+						</div>
+					</div>
+					<div class="grid__col grid__col--9 grid__col-mob--4 order-mob-1">
+						<nav class="nav-footer">
+							<a href="" class="link-footer">
+								Политика конфиденциальности
+							</a>
+							<a href="" class="link-footer">
+								Оферта
+							</a>
+							<a href="" class="link-footer">
+								Соглашение
+							</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<style>
+		.temp-content {
+			columns: 2;
+		}
+
+		.temp-content > a {
+			width:   50%;
+			padding: 10px 0;
+			display: block;
+		}
+
+		.temp-content > p {
+			width:   50%;
+			padding: 10px 0;
+			display: block;
+		}
+	</style>
+
+	<section class="temp">
+		<div class="container">
+			<div class="temp-content">
+				<a href="./index.html">
+					Главная
+				</a>
+				<a href="./banners.html">
+					Баннеры
+				</a>
+				<a href="./categories.html">
+					Категории
+				</a>
+				<a href="./catalog.html">
+					Каталог
+				</a>
+				<a href="./product.html">
+					Продукт
+				</a>
+				<a href="./productShort.html">
+					Продукт (короткая)
+				</a>
+				<a href="./about.html">
+					О компании
+				</a>
+				<a href="./blog.html">
+					Блог
+				</a>
+				<a href="./post.html">
+					Статья
+				</a>
+				<a href="./payments.html">
+					Доставка
+				</a>
+				<a href="./contacts.html">
+					Контакты
+				</a>
+				<a href="./cart.html">
+					Корзина
+				</a>
+				<a href="./order.html">
+					Оформить заказ
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<script defer src="bundle.js"></script>
+</body>
+</html>
