@@ -12,7 +12,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 			<div class="header-layout-regular">
 				<div class="header-layout-regular__cell header-layout-regular__cell--logo">
 					<a href="./" class="logo-head logo-head--regular">
-						<img src="./assets/images/logo-regular.svg" alt="Логотип">
+						<img src="<?= DEFAULT_TEMPLATE_PATH?>/images/logo-regular.svg" alt="Логотип">
 					</a>
 				</div>
 				<div class="header-layout-regular__cell header-layout-regular__cell--main">
@@ -20,7 +20,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 						<div class="header-grid__mobile">
 							<button class="button-burger" data-menu="button">
 								<svg class="button-burger__icon">
-									<use href="./assets/sprite.svg#icon-menu"></use>
+									<use href="<?= DEFAULT_TEMPLATE_PATH ?>/favicons/sprite.svg#icon-menu"></use>
 								</svg>
 								<span class="button-burger__text">
                                 Каталог
@@ -59,7 +59,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
                                 2
                             </span>
 								<svg class="button-header__icon">
-									<use href="./assets/sprite.svg#icon-card"></use>
+									<use href="<?= DEFAULT_TEMPLATE_PATH ?>/favicons/sprite.svg#icon-card"></use>
 								</svg>
 							</a>
 						</div>
@@ -74,7 +74,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 <section class="menu-layout" data-menu="block" hidden="hidden">
 	<button class="menu-layout__button" data-menu="button">
 		<svg class="menu-layout__icon">
-			<use href="./assets/sprite.svg#icon-close"></use>
+			<use href="<?= DEFAULT_TEMPLATE_PATH ?>/favicons/sprite.svg#icon-close"></use>
 		</svg>
 	</button>
 	<div class="menu-layout__content">
@@ -516,15 +516,15 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 				</div>
 				<div class="grid__col grid__col--1 mob-hidden">
 					<div class="picture-menu">
-						<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="1" alt="">
-						<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="2" alt="">
-						<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="3" alt="">
-						<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="4" alt="">
-						<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="5" alt="">
-						<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="6" alt="">
-						<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="7" alt="">
-						<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="8" alt="">
-						<img src="./assets/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="9" alt="">
+						<img src="<?= DEFAULT_TEMPLATE_PATH ?>/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="1" alt="">
+						<img src="<?= DEFAULT_TEMPLATE_PATH ?>/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="2" alt="">
+						<img src="<?= DEFAULT_TEMPLATE_PATH ?>/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="3" alt="">
+						<img src="<?= DEFAULT_TEMPLATE_PATH ?>/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="4" alt="">
+						<img src="<?= DEFAULT_TEMPLATE_PATH ?>/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="5" alt="">
+						<img src="<?= DEFAULT_TEMPLATE_PATH ?>/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="6" alt="">
+						<img src="<?= DEFAULT_TEMPLATE_PATH ?>/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="7" alt="">
+						<img src="<?= DEFAULT_TEMPLATE_PATH ?>/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="8" alt="">
+						<img src="<?= DEFAULT_TEMPLATE_PATH ?>/images/1080x1080.jpg" data-menu="picture" hidden="hidden" data-menu-picture="9" alt="">
 					</div>
 				</div>
 			</div>
