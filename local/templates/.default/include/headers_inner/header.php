@@ -1,10 +1,12 @@
 <?php
 
+global $APPLICATION;
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 	die();
 }
 
 use Bitrix\Main\Application;
+
 
 define("DEFAULT_TEMPLATE_PATH", "/local/templates/.default");
 include_once Application::getDocumentRoot() . DEFAULT_TEMPLATE_PATH . "/init.php";
