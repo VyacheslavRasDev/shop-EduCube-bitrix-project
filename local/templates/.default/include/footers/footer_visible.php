@@ -5,7 +5,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 }
 ?>
 
-</div>
+</main>
 <footer class="footer">
 	<div class="container">
 		<div class="stack stack--footer">
