@@ -11,7 +11,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 		<div class="container">
 			<div class="header-layout-regular">
 				<div class="header-layout-regular__cell header-layout-regular__cell--logo">
-					<a href="./" class="logo-head logo-head--regular">
+					<a href="/" class="logo-head logo-head--regular">
 						<img src="<?= DEFAULT_TEMPLATE_PATH?>/images/logo-regular.svg" alt="Логотип">
 					</a>
 				</div>

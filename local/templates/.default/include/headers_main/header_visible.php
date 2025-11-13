@@ -34,7 +34,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 							</div>
 							<div class="header-grid__nav">
 								<nav class="header-nav header-nav--main">
-									<a href="" class="header-nav__link">
+									<a href="/o-nas/" class="header-nav__link">
 										о компании
 									</a>
 									<a href="" class="header-nav__link">
