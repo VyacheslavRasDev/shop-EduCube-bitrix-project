@@ -32,22 +32,25 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
                                 </span>
 								</button>
 							</div>
-							<div class="header-grid__nav">
-								<nav class="header-nav header-nav--main">
-									<a href="/o-nas/" class="header-nav__link">
-										о компании
-									</a>
-									<a href="" class="header-nav__link">
-										оплата и доставка
-									</a>
-									<a href="" class="header-nav__link">
-										блог
-									</a>
-									<a href="" class="header-nav__link">
-										контакты
-									</a>
-								</nav>
-							</div>
+							<? $APPLICATION->IncludeComponent(
+								"bitrix:menu",
+								"main_menu",
+								[
+									"ALLOW_MULTI_SELECT"    => "N",
+									"CHILD_MENU_TYPE"       => "main",
+									"DELAY"                 => "N",
+									"MAX_LEVEL"             => "1",
+									"MENU_CACHE_GET_VARS"   => [
+										0 => "",
+									],
+									"MENU_CACHE_TIME"       => "3600",
+									"MENU_CACHE_TYPE"       => "N",
+									"MENU_CACHE_USE_GROUPS" => "N",
+									"ROOT_MENU_TYPE"        => "main",
+									"USE_EXT"               => "N"
+								],
+								false
+							); ?>
 							<div class="header-grid__contacts">
 								<div class="header-contacts header-contacts--main">
 									<a href="tel:+74951202186" class="header-contacts__link">
