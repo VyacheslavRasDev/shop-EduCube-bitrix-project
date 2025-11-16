@@ -51,6 +51,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 								],
 								false
 							); ?>
+
 							<div class="header-grid__contacts">
 								<div class="header-contacts header-contacts--main">
 									<a href="tel:+74951202186" class="header-contacts__link">
