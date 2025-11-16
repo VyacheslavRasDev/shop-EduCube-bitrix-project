@@ -51,17 +51,18 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 								],
 								false
 							); ?>
-
-							<div class="header-grid__contacts">
-								<div class="header-contacts header-contacts--main">
-									<a href="tel:+74951202186" class="header-contacts__link">
-										+7 (495) 120-21-86
-									</a>
-									<a href="mailto:info@educube.ru" class="header-contacts__link header-contacts__link--accent">
-										info@educube.ru
-									</a>
-								</div>
-							</div>
+							<?php $APPLICATION->IncludeComponent(
+								"eduCubeShop:contacts.block",
+								".default",
+								[
+									"PHONE_TEXT" => "+7 (902) 416-34-28",
+									"EMAIL" => "ablazeyang@yandex.ru",
+									"COMPONENT_TEMPLATE" => ".default",
+									"CACHE_TYPE" => "A",
+									"CACHE_TIME" => ""
+								],
+								false
+							); ?>
 							<div class="header-grid__toolbar">
 								<a class="button-header" href="">
                                     <span class="button-header__counter" data-product-counter="block">

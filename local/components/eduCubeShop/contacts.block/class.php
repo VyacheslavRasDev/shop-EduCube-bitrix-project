@@ -35,6 +35,7 @@ class MySimpleTextComponent extends CBitrixComponent
 	 */
 	public function executeComponent()
 	{
+
 		$textPhone = trim($this->arParams["PHONE_TEXT"]);
 		$textEmail = trim($this->arParams["EMAIL"]);
 
