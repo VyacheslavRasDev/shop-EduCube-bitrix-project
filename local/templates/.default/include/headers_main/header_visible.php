@@ -32,7 +32,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
                                 </span>
 								</button>
 							</div>
-							<? $APPLICATION->IncludeComponent(
+							<?php $APPLICATION->IncludeComponent(
 								"bitrix:menu",
 								"header_main_menu",
 								[

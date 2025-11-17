@@ -33,35 +33,25 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 						<h2 class="links-column__title">
 							Каталог
 						</h2>
-						<div class="links-column__stack">
-							<a href="" class="link-footer">
-								Конструкторы
-							</a>
-							<a href="" class="link-footer">
-								Дроны
-							</a>
-							<a href="" class="link-footer">
-								3D-принтеры
-							</a>
-							<a href="" class="link-footer">
-								Цифровые лаборатории
-							</a>
-							<a href="" class="link-footer">
-								Интерактивное оборудование
-							</a>
-							<a href="" class="link-footer">
-								Мебель
-							</a>
-							<a href="" class="link-footer">
-								Станки
-							</a>
-							<a href="" class="link-footer">
-								VR
-							</a>
-							<a href="" class="link-footer">
-								Ноутбуки
-							</a>
-						</div>
+						<?php $APPLICATION->IncludeComponent(
+							"bitrix:menu",
+							"bottom_catalog_menu",
+							[
+								"ALLOW_MULTI_SELECT"    => "N",
+								"CHILD_MENU_TYPE"       => "bottom_catalog",
+								"DELAY"                 => "N",
+								"MAX_LEVEL"             => "1",
+								"MENU_CACHE_GET_VARS"   => [
+									0 => "",
+								],
+								"MENU_CACHE_TIME"       => "3600",
+								"MENU_CACHE_TYPE"       => "N",
+								"MENU_CACHE_USE_GROUPS" => "N",
+								"ROOT_MENU_TYPE"        => "bottom_catalog",
+								"USE_EXT"               => "N"
+							],
+							false
+						); ?>
 					</div>
 				</div>
 				<div class="grid__col grid__col--3 grid__col-tab--4 grid__col-mob--2 order-mob-6">
@@ -69,26 +59,25 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 						<h2 class="links-column__title">
 							Меню
 						</h2>
-						<div class="links-column__stack">
-							<a href="" class="link-footer">
-								О компании
-							</a>
-							<a href="" class="link-footer">
-								Оплата и доставка
-							</a>
-							<a href="" class="link-footer">
-								Блог
-							</a>
-							<a href="" class="link-footer">
-								Книги по робототехнике
-							</a>
-							<a href="" class="link-footer">
-								Поддержка
-							</a>
-							<a href="" class="link-footer">
-								Контакты
-							</a>
-						</div>
+						<?php $APPLICATION->IncludeComponent(
+							"bitrix:menu",
+							"bottom_navi_menu",
+							[
+								"ALLOW_MULTI_SELECT" => "N",
+								"CHILD_MENU_TYPE" => "bottom_navi",
+								"DELAY" => "N",
+								"MAX_LEVEL" => "1",
+								"MENU_CACHE_GET_VARS" => [
+									0 => "",
+								],
+								"MENU_CACHE_TIME" => "3600",
+								"MENU_CACHE_TYPE" => "N",
+								"MENU_CACHE_USE_GROUPS" => "N",
+								"ROOT_MENU_TYPE" => "bottom_navi",
+								"USE_EXT" => "N"
+							],
+							false
+						);?>
 					</div>
 				</div>
 				<div class="grid__col grid__col-mob--4 mob-visible order-mob-3">
