@@ -8,43 +8,25 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/local/templates/.default/include/head
 ?>
 
 <div class="main__section">
-	<section class="section tab-hidden">
-		<div class="container">
-			<nav class="nav">
-				<div class="nav__controls">
-					<button class="button-burger" data-menu="button">
-						<svg class="button-burger__icon">
-							<use href="<?= DEFAULT_TEMPLATE_PATH?>/favicons/sprite.svg#icon-menu"></use>
-						</svg>
-					</button>
-				</div>
-				<a href="" class="nav__link">
-					LEGO Education
-				</a>
-				<a href="" class="nav__link">
-					Dobot
-				</a>
-				<a href="" class="nav__link">
-					DJI
-				</a>
-				<a href="" class="nav__link">
-					Coex
-				</a>
-				<a href="" class="nav__link">
-					Наборы VEX
-				</a>
-				<a href="" class="nav__link">
-					Квадрокоптеры
-				</a>
-				<a href="" class="nav__link">
-					Мебель и поля
-				</a>
-				<a href="" class="nav__link">
-					Наборы Амперка
-				</a>
-			</nav>
-		</div>
-	</section>
+	<?php $APPLICATION->IncludeComponent(
+		"bitrix:menu",
+		"main_menu",
+		[
+			"ALLOW_MULTI_SELECT" => "N",
+			"CHILD_MENU_TYPE" => "main",
+			"DELAY" => "N",
+			"MAX_LEVEL" => "1",
+			"MENU_CACHE_GET_VARS" => [
+			],
+			"MENU_CACHE_TIME" => "3600",
+			"MENU_CACHE_TYPE" => "N",
+			"MENU_CACHE_USE_GROUPS" => "N",
+			"ROOT_MENU_TYPE" => "main",
+			"USE_EXT" => "N",
+			"COMPONENT_TEMPLATE" => "main_menu"
+		],
+		false
+	);?>
 
 </div>
 <div class="main__section mb-60 mbm-25">

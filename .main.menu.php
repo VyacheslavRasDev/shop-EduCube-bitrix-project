@@ -1,32 +1,60 @@
 <?php
-$aMenuLinks = [
-	[
-		"о компании",
-		"/o-nas",
-		[],
-		[],
+$aMenuLinks = Array(
+	Array(
+		"LEGO education",
+		"/",
+		Array(),
+		Array(),
 		""
-	],
-	[
-		"оплата и доставка",
-		"/test.php",
-		[],
-		[],
+	),
+	Array(
+		"Dobot",
+		"/",
+		Array(),
+		Array(),
 		""
-	],
-	[
-		"блог",
-		"/test.php",
-		[],
-		[],
+	),
+	Array(
+		"DJI",
+		"/",
+		Array(),
+		Array(),
 		""
-	],
-	[
-		"контакты",
-		"/test.php",
-		[],
-		[],
+	),
+	Array(
+		"Coex",
+		"/",
+		Array(),
+		Array(),
 		""
-	],
-];
+	),
+	Array(
+		"Наборы VEX",
+		"/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Квадрокоптеры",
+		"/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Мебель и поля",
+		"/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Наборы Амперка",
+		"/",
+		Array(),
+		Array(),
+		""
+	)
+);
 ?>

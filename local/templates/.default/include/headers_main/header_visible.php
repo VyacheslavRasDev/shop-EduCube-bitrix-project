@@ -34,10 +34,10 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 							</div>
 							<? $APPLICATION->IncludeComponent(
 								"bitrix:menu",
-								"main_menu",
+								"header_main_menu",
 								[
 									"ALLOW_MULTI_SELECT"    => "N",
-									"CHILD_MENU_TYPE"       => "main",
+									"CHILD_MENU_TYPE"       => "top",
 									"DELAY"                 => "N",
 									"MAX_LEVEL"             => "1",
 									"MENU_CACHE_GET_VARS"   => [
@@ -46,7 +46,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 									"MENU_CACHE_TIME"       => "3600",
 									"MENU_CACHE_TYPE"       => "N",
 									"MENU_CACHE_USE_GROUPS" => "N",
-									"ROOT_MENU_TYPE"        => "main",
+									"ROOT_MENU_TYPE"        => "top",
 									"USE_EXT"               => "N"
 								],
 								false
