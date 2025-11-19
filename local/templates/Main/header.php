@@ -29,114 +29,142 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/local/templates/.default/include/head
 	);?>
 
 </div>
-<div class="main__section mb-60 mbm-25">
-	<section class="section">
-		<div class="container">
-			<article class="promo promo--large bg-green">
-				<div class="promo__header">
-					<h2 class="title title--regular">
-						Учись дома со Spike
-						<sup>TM</sup>
-						Prime
-					</h2>
-				</div>
-				<div class="promo__content">
-					<div class="editor editor--promo">
-						<p>
-							Lego Education
-							<br>
-							совместно с Фоксфорд
-						</p>
-					</div>
-					<div class="promo__control">
-						<a href="#" class="button button--middle button--blue-invert">
-							<span class="button__text">Запросить</span>
-						</a>
-					</div>
-				</div>
-				<div class="promo__footer">
-					<img src="./assets/images/logo-fox.svg" alt="">
-				</div>
-				<div class="promo__age">
-					<div class="age">
-                    <span class="age__text">
-                        10+ <br> лет
-                    </span>
-					</div>
-				</div>
-				<picture class="promo__picture">
-					<img src="./assets/images/1080x1080.jpg" alt="">
-				</picture>
-			</article>
-		</div>
-	</section>
-
-</div>
-<div class="main__section mb-180 mbt-150 mbm-100">
-	<section class="section">
-		<div class="container">
-			<div class="grid">
-				<div class="grid__col grid__col--3 grid__col-tab--6 grid__col-mob--4">
-					<article class="article-factoid">
-						<svg class="article-factoid__icon">
-							<use href="./assets/sprite.svg#icon-factoid-1"></use>
-						</svg>
-						<p class="article-factoid__text">
-							разработаем
-							<br>
-							техническое
-							<br>
-							задание
-						</p>
-					</article>
-				</div>
-				<div class="grid__col grid__col--3 grid__col-tab--6 grid__col-mob--4">
-					<article class="article-factoid">
-						<svg class="article-factoid__icon">
-							<use href="./assets/sprite.svg#icon-factoid-2"></use>
-						</svg>
-						<p class="article-factoid__text">
-							оплата 30/70
-							<br>
-							или полная
-							<br>
-							постоплата (44ФЗ)
-						</p>
-					</article>
-				</div>
-				<div class="grid__col grid__col--3 grid__col-tab--6 grid__col-mob--4">
-					<article class="article-factoid">
-						<svg class="article-factoid__icon">
-							<use href="./assets/sprite.svg#icon-factoid-3"></use>
-						</svg>
-						<p class="article-factoid__text">
-							Широкий выбор
-							<br>
-							способов
-							<br>
-							доставки
-						</p>
-					</article>
-				</div>
-				<div class="grid__col grid__col--3 grid__col-tab--6 grid__col-mob--4">
-					<article class="article-factoid">
-						<svg class="article-factoid__icon">
-							<use href="./assets/sprite.svg#icon-factoid-4"></use>
-						</svg>
-						<p class="article-factoid__text">
-							оплата при
-							<br>
-							получении для
-							<br>
-							физических лиц
-						</p>
-					</article>
-				</div>
-			</div>
-		</div>
-	</section>
-
-</div>
+<?php $APPLICATION->IncludeComponent(
+	"bitrix:news.list",
+	"main_promo",
+	[
+		"ACTIVE_DATE_FORMAT"              => "d.m.Y",
+		"ADD_SECTIONS_CHAIN"              => "Y",
+		"AJAX_MODE"                       => "N",
+		"AJAX_OPTION_ADDITIONAL"          => "",
+		"AJAX_OPTION_HISTORY"             => "N",
+		"AJAX_OPTION_JUMP"                => "N",
+		"AJAX_OPTION_STYLE"               => "Y",
+		"CACHE_FILTER"                    => "N",
+		"CACHE_GROUPS"                    => "Y",
+		"CACHE_TIME"                      => "36000000",
+		"CACHE_TYPE"                      => "A",
+		"CHECK_DATES"                     => "Y",
+		"DETAIL_URL"                      => "",
+		"DISPLAY_BOTTOM_PAGER"            => "Y",
+		"DISPLAY_DATE"                    => "N",
+		"DISPLAY_NAME"                    => "N",
+		"DISPLAY_PICTURE"                 => "Y",
+		"DISPLAY_PREVIEW_TEXT"            => "Y",
+		"DISPLAY_TOP_PAGER"               => "N",
+		"FIELD_CODE"                      => [
+			"ID",
+			"CODE",
+			"NAME",
+			"PREVIEW_TEXT",
+			"PREVIEW_PICTURE",
+			"DETAIL_TEXT",
+			""
+		],
+		"FILTER_NAME"                     => "",
+		"HIDE_LINK_WHEN_NO_DETAIL"        => "N",
+		"IBLOCK_ID"                       => "3",
+		"IBLOCK_TYPE"                     => "Main",
+		"INCLUDE_IBLOCK_INTO_CHAIN"       => "N",
+		"INCLUDE_SUBSECTIONS"             => "Y",
+		"MESSAGE_404"                     => "",
+		"NEWS_COUNT"                      => "1",
+		"PAGER_BASE_LINK_ENABLE"          => "N",
+		"PAGER_DESC_NUMBERING"            => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL"                  => "N",
+		"PAGER_SHOW_ALWAYS"               => "N",
+		"PAGER_TEMPLATE"                  => ".default",
+		"PAGER_TITLE"                     => "Новости",
+		"PARENT_SECTION"                  => "",
+		"PARENT_SECTION_CODE"             => "",
+		"PREVIEW_TRUNCATE_LEN"            => "",
+		"PROPERTY_CODE"                   => [
+			"BUTTON_LINK",
+			"AGE_TEXT",
+			"BUTTON_TEXT",
+			""
+		],
+		"SET_BROWSER_TITLE"               => "N",
+		"SET_LAST_MODIFIED"               => "N",
+		"SET_META_DESCRIPTION"            => "N",
+		"SET_META_KEYWORDS"               => "N",
+		"SET_STATUS_404"                  => "N",
+		"SET_TITLE"                       => "N",
+		"SHOW_404"                        => "N",
+		"SORT_BY1"                        => "ACTIVE_FROM",
+		"SORT_BY2"                        => "SORT",
+		"SORT_ORDER1"                     => "DESC",
+		"SORT_ORDER2"                     => "ASC",
+		"STRICT_SECTION_CHECK"            => "N"
+	]
+); ?>
+<?php $APPLICATION->IncludeComponent(
+	"bitrix:news.list",
+	"main_factoids",
+	[
+		"ACTIVE_DATE_FORMAT"              => "d.m.Y",
+		"ADD_SECTIONS_CHAIN"              => "Y",
+		"AJAX_MODE"                       => "N",
+		"AJAX_OPTION_ADDITIONAL"          => "",
+		"AJAX_OPTION_HISTORY"             => "N",
+		"AJAX_OPTION_JUMP"                => "N",
+		"AJAX_OPTION_STYLE"               => "Y",
+		"CACHE_FILTER"                    => "N",
+		"CACHE_GROUPS"                    => "Y",
+		"CACHE_TIME"                      => "36000000",
+		"CACHE_TYPE"                      => "A",
+		"CHECK_DATES"                     => "Y",
+		"DETAIL_URL"                      => "",
+		"DISPLAY_BOTTOM_PAGER"            => "Y",
+		"DISPLAY_DATE"                    => "N",
+		"DISPLAY_NAME"                    => "N",
+		"DISPLAY_PICTURE"                 => "Y",
+		"DISPLAY_PREVIEW_TEXT"            => "Y",
+		"DISPLAY_TOP_PAGER"               => "N",
+		"FIELD_CODE"                      => [
+			0 => "ID",
+			1 => "NAME",
+			2 => "PREVIEW_TEXT",
+			3 => "",
+		],
+		"FILTER_NAME"                     => "",
+		"HIDE_LINK_WHEN_NO_DETAIL"        => "N",
+		"IBLOCK_ID"                       => "4",
+		"IBLOCK_TYPE"                     => "Main",
+		"INCLUDE_IBLOCK_INTO_CHAIN"       => "Y",
+		"INCLUDE_SUBSECTIONS"             => "N",
+		"MESSAGE_404"                     => "",
+		"NEWS_COUNT"                      => "4",
+		"PAGER_BASE_LINK_ENABLE"          => "N",
+		"PAGER_DESC_NUMBERING"            => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL"                  => "N",
+		"PAGER_SHOW_ALWAYS"               => "N",
+		"PAGER_TEMPLATE"                  => ".default",
+		"PAGER_TITLE"                     => "Новости",
+		"PARENT_SECTION"                  => "",
+		"PARENT_SECTION_CODE"             => "",
+		"PREVIEW_TRUNCATE_LEN"            => "",
+		"PROPERTY_CODE"                   => [
+			0 => "ID_ICON",
+			1 => "",
+		],
+		"SET_BROWSER_TITLE"               => "N",
+		"SET_LAST_MODIFIED"               => "N",
+		"SET_META_DESCRIPTION"            => "N",
+		"SET_META_KEYWORDS"               => "N",
+		"SET_STATUS_404"                  => "N",
+		"SET_TITLE"                       => "N",
+		"SHOW_404"                        => "N",
+		"SORT_BY1"                        => "ACTIVE_FROM",
+		"SORT_BY2"                        => "SORT",
+		"SORT_ORDER1"                     => "DESC",
+		"SORT_ORDER2"                     => "ASC",
+		"STRICT_SECTION_CHECK"            => "N"
+	],
+	false
+); ?>
 <div class="main__section mb-130 mbt-150 mbm-100">
 	<section class="section">
 		<div class="container">
@@ -696,100 +724,72 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/local/templates/.default/include/head
 	</section>
 
 </div>
-<div class="main__section mb-125 mbt-160 mbm-100">
-	<section class="section">
-		<div class="container">
-			<div class="grid mb-35 mbm-25">
-				<div class="grid__col grid__col--6 grid__col-mob--4">
-					<h2 class="title title--regular">
-						Мы растим в России новое поколение гениальных инженеров
-					</h2>
-				</div>
-			</div>
-			<div class="caption-line mb-40 mbm-35">
-            <span class="caption-line__text">
-                Наша миссия
-            </span>
-			</div>
-			<div class="grid mb-85 mbt-65 mbm-50">
-				<div class="grid__col grid__col--6 grid__col-tab--9 grid__col-mob--4">
-					<div class="editor editor--large">
-						<p>
-							Мы работаем для того, чтобы в России подрастало новое поколение талантливых и влюблённых в своё дело юных инженеров,
-							робототехников и пилотов.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="grid">
-				<div class="grid__col grid__col--4 grid__col-tab--12 grid__col-mob--12">
-					<article class="article-feature">
-						<svg class="article-feature__icon">
-							<use href="./assets/sprite.svg#icon-handshake"></use>
-						</svg>
-						<div class="article-feature__content">
-							<h3 class="article-feature__title">
-								Используем опыт
-								<br>
-								2.500 проектов
-							</h3>
-							<div class="article-feature__caption">
-								<div class="editor-simple">
-									<p>
-										Мы реализовали более 2.500 проектов для образовательных учреждений в России
-									</p>
-								</div>
-							</div>
-						</div>
-					</article>
-				</div>
-				<div class="grid__col grid__col--4 grid__col-tab--12 grid__col-mob--12">
-					<article class="article-feature">
-						<svg class="article-feature__icon">
-							<use href="./assets/sprite.svg#icon-drone"></use>
-						</svg>
-						<div class="article-feature__content">
-							<h3 class="article-feature__title">
-								Сами производим
-								<br>
-								продукцию
-							</h3>
-							<div class="article-feature__caption">
-								<div class="editor-simple">
-									<p>
-										Производим квадрокоптеры для целей образования под брендом LBS TT
-									</p>
-								</div>
-							</div>
-						</div>
-					</article>
-				</div>
-				<div class="grid__col grid__col--4 grid__col-tab--12 grid__col-mob--12">
-					<article class="article-feature">
-						<svg class="article-feature__icon">
-							<use href="./assets/sprite.svg#icon-education"></use>
-						</svg>
-						<div class="article-feature__content">
-							<h3 class="article-feature__title">
-								Создаём программы
-								<br>
-								и методики
-							</h3>
-							<div class="article-feature__caption">
-								<div class="editor-simple">
-									<p>
-										Разрабатываем программы и методики обучения в сфере робототехники и дронов
-									</p>
-								</div>
-							</div>
-						</div>
-					</article>
-				</div>
-			</div>
-		</div>
-	</section>
-
-</div>
+<?php $APPLICATION->IncludeComponent(
+	"bitrix:news.list",
+	"main_preview",
+	[
+		"ACTIVE_DATE_FORMAT"              => "d.m.Y",
+		"ADD_SECTIONS_CHAIN"              => "Y",
+		"AJAX_MODE"                       => "N",
+		"AJAX_OPTION_ADDITIONAL"          => "",
+		"AJAX_OPTION_HISTORY"             => "N",
+		"AJAX_OPTION_JUMP"                => "N",
+		"AJAX_OPTION_STYLE"               => "Y",
+		"CACHE_FILTER"                    => "N",
+		"CACHE_GROUPS"                    => "Y",
+		"CACHE_TIME"                      => "36000000",
+		"CACHE_TYPE"                      => "A",
+		"CHECK_DATES"                     => "Y",
+		"DETAIL_URL"                      => "",
+		"DISPLAY_BOTTOM_PAGER"            => "Y",
+		"DISPLAY_DATE"                    => "N",
+		"DISPLAY_NAME"                    => "Y",
+		"DISPLAY_PICTURE"                 => "Y",
+		"DISPLAY_PREVIEW_TEXT"            => "Y",
+		"DISPLAY_TOP_PAGER"               => "N",
+		"FIELD_CODE"                      => [
+			0 => "NAME",
+			1 => "PREVIEW_TEXT",
+			2 => "DETAIL_TEXT",
+			3 => "",
+		],
+		"FILTER_NAME"                     => "",
+		"HIDE_LINK_WHEN_NO_DETAIL"        => "N",
+		"IBLOCK_ID"                       => "5",
+		"IBLOCK_TYPE"                     => "Main",
+		"INCLUDE_IBLOCK_INTO_CHAIN"       => "Y",
+		"INCLUDE_SUBSECTIONS"             => "N",
+		"MESSAGE_404"                     => "",
+		"NEWS_COUNT"                      => "3",
+		"PAGER_BASE_LINK_ENABLE"          => "N",
+		"PAGER_DESC_NUMBERING"            => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL"                  => "N",
+		"PAGER_SHOW_ALWAYS"               => "N",
+		"PAGER_TEMPLATE"                  => ".default",
+		"PAGER_TITLE"                     => "Новости",
+		"PARENT_SECTION"                  => "",
+		"PARENT_SECTION_CODE"             => "",
+		"PREVIEW_TRUNCATE_LEN"            => "",
+		"PROPERTY_CODE"                   => [
+			0 => "ID_ICON",
+			1 => "",
+		],
+		"SET_BROWSER_TITLE"               => "N",
+		"SET_LAST_MODIFIED"               => "N",
+		"SET_META_DESCRIPTION"            => "N",
+		"SET_META_KEYWORDS"               => "N",
+		"SET_STATUS_404"                  => "N",
+		"SET_TITLE"                       => "N",
+		"SHOW_404"                        => "N",
+		"SORT_BY1"                        => "ACTIVE_FROM",
+		"SORT_BY2"                        => "SORT",
+		"SORT_ORDER1"                     => "DESC",
+		"SORT_ORDER2"                     => "ASC",
+		"STRICT_SECTION_CHECK"            => "N"
+	],
+	false
+); ?>
 <div class="main__section mb-95 mbt-150 mbm-100">
 	<section class="section">
 		<div class="container">
