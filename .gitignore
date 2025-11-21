@@ -1,6 +1,10 @@
 /.idea/*
 /bitrix/*
 
+!/bitrix/php_interface/
+!/bitrix/templates/
+!/bitrix/components/
+
 /bitrix/cache/
 /bitrix/managed_cache/
 /bitrix/components/bitrix/
