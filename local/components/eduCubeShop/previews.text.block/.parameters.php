@@ -7,25 +7,25 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
 $arComponentParameters = [
 	'GROUPS'     => [],
 	'PARAMETERS' => [
-		'LINE1'         => [
+		'HEADER_TEXT'         => [
 			'PARENT'  => 'BASE',
-			'NAME'    => 'Строка',
+			'NAME'    => GetMessage('PREVIEWS_TEXT_HEADER_TEXT_NAME'),
 			'TYPE'    => 'STRING',
 			'DEFAULT' => 'Первая строка',
 			'COLS'    => 80,
 			'ROWS'    => 5,
 		],
-		'LINE2'         => [
+		'BLOCK_TITLE'         => [
 			'PARENT'  => 'BASE',
-			'NAME'    => 'Строка 2',
+			'NAME'    => GetMessage('PREVIEWS_TEXT_BLOCK_TITLE_NAME'),
 			'TYPE'    => 'STRING',
 			'DEFAULT' => 'Вторая строка',
 			'COLS'    => 80,
 			'ROWS'    => 5,
 		],
-		'LINE3'         => [
+		'DESCRIPTION_TEXT'         => [
 			'PARENT'  => 'BASE',
-			'NAME'    => 'Строка 3',
+			'NAME'    => GetMessage('PREVIEWS_TEXT_DESCRIPTION_TEXT_NAME'),
 			'TYPE'    => 'STRING',
 			'DEFAULT' => 'Третья строка',
 			'COLS'    => 80,

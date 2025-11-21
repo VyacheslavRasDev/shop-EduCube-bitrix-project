@@ -36,17 +36,22 @@ class MySimpleTextComponent extends CBitrixComponent
 	public function executeComponent()
 	{
 
-		$textPhone = trim($this->arParams["PHONE_TEXT"]);
+		$textPhone = trim($this->arParams["PHONE_NUMBER"]);
 		$textEmail = trim($this->arParams["EMAIL"]);
-
 		// Чистим телефон и превращаем в ссылку
 		$cleanPhone = $this->cleanPhone($textPhone);
 
-		// Передаём в шаблон
-		$this->arResult["PHONE_TEXT"] = $textPhone;
-		$this->arResult["PHONE_LINK"] = $cleanPhone;
-		$this->arResult["EMAIL"]      = $textEmail;
 
+		// Передаём в шаблон
+//		$this->arResult["PHONE_NUMBER"] = $textPhone;
+//		$this->arResult["PHONE_LINK"] = $cleanPhone;
+//		$this->arResult["EMAIL"]      = $textEmail;
+
+		$this->arResult = [
+			"PHONE_NUMBER" => $textPhone,
+			"EMAIL" => $textEmail,
+			"PHONE_LINK" => $cleanPhone,
+		];
 		$this->includeComponentTemplate();
 	}
 }

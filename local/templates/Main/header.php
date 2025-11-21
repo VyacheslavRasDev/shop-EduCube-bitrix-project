@@ -27,7 +27,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/local/templates/.default/include/head
 		],
 		false
 	);?>
-
 </div>
 <?php $APPLICATION->IncludeComponent(
 	"bitrix:news.list",

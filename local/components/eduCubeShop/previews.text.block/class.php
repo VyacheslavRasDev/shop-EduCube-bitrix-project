@@ -8,6 +8,13 @@ use Bitrix\Main\Engine\Contract\Controllerable;
 
 class SimpleTextComponent extends CBitrixComponent
 {
+	protected function validateText($text)
+	{
+		$text = trim($text);
+		$text = mb_substr($text, 0, 200);
+
+		return htmlspecialchars($text);
+	}
 	/**
 	 * Метод onPrepareComponentParams приводил и валидирует входящие параметры.
 	 */
@@ -17,14 +24,11 @@ class SimpleTextComponent extends CBitrixComponent
 	 */
 	public function executeComponent()
 	{
-		$line1 = trim($this->arParams["LINE1"]);
-		$line2 = trim($this->arParams["LINE2"]);
-		$line3 = trim($this->arParams["LINE3"]);
-
-		$this->arResult['LINE1'] = $line1;
-		$this->arResult['LINE2'] = $line2;
-		$this->arResult['LINE3'] = $line3;
-
+		$this->arResult = [
+			"HEADER_TEXT" => $this->validateText($this->arParams["HEADER_TEXT"]),
+			"BLOCK_TITLE" => $this->validateText($this->arParams["BLOCK_TITLE"]),
+			"DESCRIPTION_TEXT" => $this->validateText($this->arParams["DESCRIPTION_TEXT"]),
+		];
 
 		$this->includeComponentTemplate();
 	}

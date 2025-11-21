@@ -1,0 +1,4 @@
+<?php
+$MESS["CONTACTS_BLOCK_PHONE_NUMBER_NAME"] = "Phone number";
+$MESS["CONTACTS_BLOCK_EMAIL_NAME"] = "Email";
+?>

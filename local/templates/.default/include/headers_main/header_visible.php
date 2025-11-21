@@ -55,7 +55,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 								"eduCubeShop:contacts.block",
 								".default",
 								[
-									"PHONE_TEXT" => "+7 (902) 416-34-28",
+									"PHONE_NUMBER" => "+7 (902) 416-34-28",
 									"EMAIL" => "ablazeyang@yandex.ru",
 									"COMPONENT_TEMPLATE" => ".default",
 									"CACHE_TYPE" => "A",

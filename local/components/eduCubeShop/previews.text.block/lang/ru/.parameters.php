@@ -1,0 +1,5 @@
+<?php
+$MESS["PREVIEWS_TEXT_HEADER_TEXT_NAME"] = "Заголовок";
+$MESS["PREVIEWS_TEXT_BLOCK_TITLE_NAME"] = "Заголовок блока";
+$MESS["PREVIEWS_TEXT_DESCRIPTION_TEXT_NAME"] = "Описание";
+?>

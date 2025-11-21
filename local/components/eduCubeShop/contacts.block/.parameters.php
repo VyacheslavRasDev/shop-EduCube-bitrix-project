@@ -6,15 +6,15 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
 
 $arComponentParameters = [
 	"PARAMETERS" => [
-		"PHONE_TEXT" => [
+		"PHONE_NUMBER" => [
 			"PARENT" => "BASE",
-			"NAME" => "Телефон",
+			"NAME" => GetMessage('CONTACTS_PHONE_NUMBER_NAME'),
 			"TYPE" => "STRING",
 			"DEFAULT" => "Введите телефон",
 		],
 		"EMAIL" => [
 			"PARENT"  => "BASE",
-			"NAME"    => "Почта",
+			"NAME"    => GetMessage('CONTACTS_EMAIL_NAME'),
 			"TYPE"    => "STRING",
 			"DEFAULT" => "Введите email",
 		],
