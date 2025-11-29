@@ -62,7 +62,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/local/templates/.default/include/head
 		],
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "5",
+		"IBLOCK_CODE" => "main_promo",
 		"IBLOCK_TYPE" => "Main",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"INCLUDE_SUBSECTIONS" => "Y",
@@ -131,7 +131,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/local/templates/.default/include/head
 		],
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "8",
+		"IBLOCK_ID" => getIblockIdByCode("factoids"),
 		"IBLOCK_TYPE" => "Main",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
 		"INCLUDE_SUBSECTIONS" => "N",
@@ -163,7 +163,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/local/templates/.default/include/head
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N",
-		"COMPONENT_TEMPLATE" => "main_factoids"
+		"COMPONENT_TEMPLATE" => "main_factoids",
 	],
 	false
 ); ?>
@@ -201,7 +201,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/local/templates/.default/include/head
 	],
 	false
 );?>
-
 <div class="main__section mb-130 mbt-150 mbm-100">
 	<section class="section">
 		<div class="container">
@@ -792,7 +791,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/local/templates/.default/include/head
 		],
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "6",
+		"IBLOCK_ID" => getIblockIdByCode("main_preview"),
 		"IBLOCK_TYPE" => "Main",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
 		"INCLUDE_SUBSECTIONS" => "N",
@@ -859,7 +858,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/local/templates/.default/include/head
 		],
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "7",
+		"IBLOCK_ID" => getIblockIdByCode("main_partners"),
 		"IBLOCK_TYPE" => "Main",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
 		"INCLUDE_SUBSECTIONS" => "Y",
@@ -895,7 +894,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/local/templates/.default/include/head
 	],
 	false
 ); ?>
-
 <div class="main__section">
 	<section class="section">
 		<div class="container">

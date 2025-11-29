@@ -8,6 +8,10 @@ use \Bitrix\Main\Application;
 use Bitrix\Main\Page\Asset;
 use Bitrix\Main\Page\AssetLocation;
 
+use Bitrix\Main\Loader;
+use Bitrix\Iblock\IblockTable;
+
+
 $request = Application::getInstance()->getContext()->getRequest();
 $asset   = Asset::getInstance();
 
@@ -28,3 +32,24 @@ $asset->addCss(DEFAULT_TEMPLATE_PATH . "/main.0fcf.css");
 $asset->addJs(DEFAULT_TEMPLATE_PATH . "/bundle.js");
 
 $isMainPage = $request->getRequestedPageDirectory() == "/";
+
+//функция передачи id в компонент.
+function getIblockIdByCode(string $code, string $type = "")
+{
+	if (!Loader::includeModule("iblock")) {
+		return null;
+	}
+
+	$filter = ["CODE" => $code];
+
+	if ($type !== "") {
+		$filter["IBLOCK_TYPE_ID"] = $type;
+	}
+
+	$iblock = IblockTable::getList([
+		"filter" => $filter,
+		"select" => ["ID"]
+	])->fetch();
+
+	return $iblock ? (int)$iblock["ID"] : null;
+}
