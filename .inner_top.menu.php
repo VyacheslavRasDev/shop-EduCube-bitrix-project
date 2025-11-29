@@ -17,7 +17,7 @@ $aMenuLinks = [
 	],
 	[
 		"блог",
-		"/test.php",
+		"/test2.php",
 		[],
 		[],
 		""
