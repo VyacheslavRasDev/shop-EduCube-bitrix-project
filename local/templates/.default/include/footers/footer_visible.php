@@ -35,7 +35,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 						</h2>
 						<?php $APPLICATION->IncludeComponent(
 							"bitrix:menu",
-							"bottom_catalog_menu",
+							"footer_catalog_menu",
 							[
 								"ALLOW_MULTI_SELECT"    => "N",
 								"CHILD_MENU_TYPE"       => "bottom_catalog",
@@ -47,7 +47,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 								"MENU_CACHE_TIME"       => "3600",
 								"MENU_CACHE_TYPE"       => "N",
 								"MENU_CACHE_USE_GROUPS" => "N",
-								"ROOT_MENU_TYPE"        => "bottom_catalog",
+								"ROOT_MENU_TYPE"        => "footer_catalog",
 								"USE_EXT"               => "N"
 							],
 							false
@@ -61,7 +61,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 						</h2>
 						<?php $APPLICATION->IncludeComponent(
 							"bitrix:menu",
-							"bottom_navi_menu",
+							"footer_navi_menu",
 							[
 								"ALLOW_MULTI_SELECT" => "N",
 								"CHILD_MENU_TYPE" => "bottom_navi",
@@ -73,7 +73,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 								"MENU_CACHE_TIME" => "3600",
 								"MENU_CACHE_TYPE" => "N",
 								"MENU_CACHE_USE_GROUPS" => "N",
-								"ROOT_MENU_TYPE" => "bottom_navi",
+								"ROOT_MENU_TYPE" => "footer_navi",
 								"USE_EXT" => "N"
 							],
 							false

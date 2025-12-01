@@ -18,19 +18,13 @@ $this->setFrameMode(true);
 ?>
 
 <?php
-//echo '<pre>';
-//print_r($arResult['SECTIONS']);
-//echo '<pre>';
-//?>
+$strSectionEdit = CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "SECTION_EDIT");
+$strSectionDelete = CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "SECTION_DELETE");
+$arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_CONFIRM'));
+?>
 
-
-<?php
-	$strSectionEdit = CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "SECTION_EDIT");
-	$strSectionDelete = CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "SECTION_DELETE");
-	$arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_CONFIRM'));
+<?php if (0 < $arResult["SECTIONS_COUNT"]) {
 	?>
-
-<?php if (!empty($arResult["SECTIONS"])) { ?>
 	<div class="main__section mb-130 mbt-150 mbm-100">
 		<section class="section">
 			<div class="container">
@@ -42,8 +36,8 @@ $this->setFrameMode(true);
 						<div class="grid">
 							<?php foreach ($arResult["SECTIONS"] as $index => $arItem) { ?>
 								<?php
-								$this->AddEditAction($arResult['SECTIONS']['ID'], $arResult['SECTIONS']['EDIT_LINK'], $strSectionEdit);
-								$this->AddDeleteAction($arResult['SECTIONS']['ID'], $arResult['SECTIONS']['DELETE_LINK'], $strSectionDelete, $arSectionDeleteParams);
+								$this->AddEditAction($arResult['SECTION']['ID'], $arResult['SECTION']['EDIT_LINK'], $strSectionEdit);
+								$this->AddDeleteAction($arResult['SECTION']['ID'], $arResult['SECTION']['DELETE_LINK'], $strSectionDelete, $arSectionDeleteParams);
 
 								if ($index < 4) {
 									$groupClass ="large-top";
@@ -51,6 +45,7 @@ $this->setFrameMode(true);
 								} elseif ($index < 6) {
 									$groupClass = "large-bottom";
 									$currentCol = 6;
+									$hiddenClass = "hidden-category";
 								} else {
 									$groupClass = "small";
 									$currentCol = 4;
@@ -71,31 +66,12 @@ $this->setFrameMode(true);
 										<div class="article-category__content">
 											<div class="article-category__columns">
 												<div class="article-category__column">
-													<a class="article-category__link" href="">
-														LEGO Education
-													</a>
-													<a class="article-category__link" href="">
-														Tetrix
-													</a>
-													<a class="article-category__link" href="">
-														HiTechnic
-													</a>
-													<a class="article-category__link" href="">
-														Mindsensors
-													</a>
-													<a class="article-category__link" href="">
-														ROBOT C
+													<a class="article-category__link" href="<?= $arItem["SECTION_PAGE_URL"]?>">
 													</a>
 												</div>
-												<div class="article-category__column">
+												<div class="article-category__column <?= $hiddenClass ?>">
 													<a class="article-category__link" href="">
 														начальная школа
-													</a>
-													<a class="article-category__link" href="">
-														средняя школа
-													</a>
-													<a class="article-category__link" href="">
-														детский сад
 													</a>
 												</div>
 											</div>

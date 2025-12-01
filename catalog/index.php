@@ -1,14 +1,13 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("catalog");
-?>
-
-<?$APPLICATION->IncludeComponent(
+?><?$APPLICATION->IncludeComponent(
 	"bitrix:catalog", 
 	"catalog", 
 	[
 		"ACTION_VARIABLE" => "action",
 		"ADD_ELEMENT_CHAIN" => "N",
+		"ADD_PICT_PROP" => "-",
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
 		"AJAX_MODE" => "N",
@@ -28,6 +27,8 @@ $APPLICATION->SetTitle("catalog");
 		"DETAIL_ADD_DETAIL_TO_SLIDER" => "N",
 		"DETAIL_ADD_TO_BASKET_ACTION" => [
 			0 => "BUY",
+		],
+		"DETAIL_ADD_TO_BASKET_ACTION_PRIMARY" => [
 		],
 		"DETAIL_BACKGROUND_IMAGE" => "-",
 		"DETAIL_BRAND_USE" => "N",
@@ -83,6 +84,8 @@ $APPLICATION->SetTitle("catalog");
 		"IBLOCK_TYPE" => "Catalog",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"INSTANT_RELOAD" => "N",
+		"LABEL_PROP" => [
+		],
 		"LAZY_LOAD" => "N",
 		"LINE_ELEMENT_COUNT" => "3",
 		"LINK_ELEMENTS_URL" => "link.php?PARENT_ELEMENT_ID=#ELEMENT_ID#",
@@ -90,8 +93,14 @@ $APPLICATION->SetTitle("catalog");
 		"LINK_IBLOCK_TYPE" => "",
 		"LINK_PROPERTY_SID" => "",
 		"LIST_BROWSER_TITLE" => "-",
+		"LIST_ENLARGE_PRODUCT" => "STRICT",
 		"LIST_META_DESCRIPTION" => "-",
 		"LIST_META_KEYWORDS" => "-",
+		"LIST_PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons",
+		"LIST_PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",
+		"LIST_SHOW_SLIDER" => "Y",
+		"LIST_SLIDER_INTERVAL" => "3000",
+		"LIST_SLIDER_PROGRESS" => "N",
 		"LOAD_ON_SCROLL" => "N",
 		"MESSAGE_404" => "",
 		"MESS_BTN_ADD_TO_BASKET" => "В корзину",
@@ -136,7 +145,8 @@ $APPLICATION->SetTitle("catalog");
 		"SECTION_COUNT_ELEMENTS" => "Y",
 		"SECTION_ID_VARIABLE" => "SECTION_ID",
 		"SECTION_TOP_DEPTH" => "2",
-		"SEF_MODE" => "N",
+		"SEF_FOLDER" => "/catalog/",
+		"SEF_MODE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "Y",
@@ -158,7 +168,14 @@ $APPLICATION->SetTitle("catalog");
 		"TOP_ELEMENT_SORT_FIELD2" => "id",
 		"TOP_ELEMENT_SORT_ORDER" => "asc",
 		"TOP_ELEMENT_SORT_ORDER2" => "desc",
+		"TOP_ENLARGE_PRODUCT" => "STRICT",
 		"TOP_LINE_ELEMENT_COUNT" => "3",
+		"TOP_PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons",
+		"TOP_PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",
+		"TOP_SHOW_SLIDER" => "Y",
+		"TOP_SLIDER_INTERVAL" => "3000",
+		"TOP_SLIDER_PROGRESS" => "N",
+		"TOP_VIEW_MODE" => "SECTION",
 		"USER_CONSENT" => "N",
 		"USER_CONSENT_ID" => "0",
 		"USER_CONSENT_IS_CHECKED" => "Y",
@@ -177,31 +194,18 @@ $APPLICATION->SetTitle("catalog");
 		"USE_SALE_BESTSELLERS" => "Y",
 		"USE_STORE" => "N",
 		"COMPONENT_TEMPLATE" => "catalog",
-		"ADD_PICT_PROP" => "-",
-		"LABEL_PROP" => [
+		"SEF_URL_TEMPLATES" => [
+			"sections" => "",
+			"section" => "#SECTION_CODE#/",
+			"element" => "#SECTION_CODE#/#ELEMENT_CODE#/",
+			"compare" => "compare.php?action=#ACTION_CODE#",
+			"smart_filter" => "#SECTION_ID#/filter/#SMART_FILTER_PATH#/apply/",
 		],
-		"DETAIL_ADD_TO_BASKET_ACTION_PRIMARY" => [
-			0 => "BUY",
-		],
-		"TOP_VIEW_MODE" => "SECTION",
-		"TOP_PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons",
-		"TOP_PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'1','BIG_DATA':false},{'VARIANT':'1','BIG_DATA':false},{'VARIANT':'1','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",
-		"TOP_ENLARGE_PRODUCT" => "STRICT",
-		"TOP_SHOW_SLIDER" => "Y",
-		"TOP_SLIDER_INTERVAL" => "3000",
-		"TOP_SLIDER_PROGRESS" => "N",
-		"LIST_PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons",
-		"LIST_PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'1','BIG_DATA':false},{'VARIANT':'1','BIG_DATA':false},{'VARIANT':'1','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",
-		"LIST_ENLARGE_PRODUCT" => "STRICT",
-		"LIST_SHOW_SLIDER" => "Y",
-		"LIST_SLIDER_INTERVAL" => "3000",
-		"LIST_SLIDER_PROGRESS" => "N",
 		"VARIABLE_ALIASES" => [
-			"ELEMENT_ID" => "ELEMENT_ID",
-			"SECTION_ID" => "SECTION_ID",
+			"compare" => [
+				"ACTION_CODE" => "action",
+			],
 		]
 	],
 	false
-);?>
-
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
