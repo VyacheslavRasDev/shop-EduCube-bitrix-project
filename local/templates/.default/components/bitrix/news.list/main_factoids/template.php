@@ -21,26 +21,25 @@ $this->setFrameMode(true);
 //?>
 
 <?php if (!empty($arResult["ITEMS"])) { ?>
-	<div class="main__section mb-180 mbt-150 mbm-100">
-		<section class="section">
-			<div class="container">
-				<div class="grid">
-					<?php foreach ($arResult["ITEMS"] as $arItem) { ?>
-						<?php
-						$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
-						$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), ["CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')]);
-						?>
-						<div class="grid__col grid__col--3 grid__col-tab--6 grid__col-mob--4" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
-							<article class="article-factoid article-factoid__text">
-								<svg class="article-factoid__icon">
-									<use href="<?= CFile::GetPath($arItem["PROPERTIES"]["ICON_FACTOID"]["VALUE"]) ?? ""; ?>#<?= $arItem["PROPERTIES"]["ID_ICON"]["VALUE"] ?? ""; ?>"></use>
-								</svg>
-								<?= $arItem["PREVIEW_TEXT"]; ?>
-							</article>
-						</div>
-					<?php } ?>
-				</div>
+
+	<section class="section">
+		<div class="container">
+			<div class="grid">
+				<?php foreach ($arResult["ITEMS"] as $arItem) { ?>
+					<?php
+					$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
+					$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), ["CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')]);
+					?>
+					<div class="grid__col grid__col--3 grid__col-tab--6 grid__col-mob--4" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
+						<article class="article-factoid article-factoid__text">
+							<svg class="article-factoid__icon">
+								<use href="<?= CFile::GetPath($arItem["PROPERTIES"]["ICON_FACTOID"]["VALUE"]) ?? ""; ?>#<?= $arItem["PROPERTIES"]["ID_ICON"]["VALUE"] ?? ""; ?>"></use>
+							</svg>
+							<?= $arItem["PREVIEW_TEXT"]; ?>
+						</article>
+					</div>
+				<?php } ?>
 			</div>
-		</section>
-	</div>
+		</div>
+	</section>
 <?php } ?>

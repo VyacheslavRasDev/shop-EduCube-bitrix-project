@@ -6,7 +6,8 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
 
 use Bitrix\Main\Engine\Contract\Controllerable;
 
-class MySimpleTextComponent extends CBitrixComponent
+class MySimpleTextComponent extends
+	CBitrixComponent
 {
 	/**
 	 * Метод onPrepareComponentParams приводил и валидирует входящие параметры.
@@ -35,22 +36,14 @@ class MySimpleTextComponent extends CBitrixComponent
 	 */
 	public function executeComponent()
 	{
-
-		$textPhone = trim($this->arParams["PHONE_NUMBER"]);
-		$textEmail = trim($this->arParams["EMAIL"]);
-		// Чистим телефон и превращаем в ссылку
+		$textPhone  = trim($this->arParams["PHONE_NUMBER"]);
+		$textEmail  = trim($this->arParams["EMAIL"]);
 		$cleanPhone = $this->cleanPhone($textPhone);
-
-
-		// Передаём в шаблон
-//		$this->arResult["PHONE_NUMBER"] = $textPhone;
-//		$this->arResult["PHONE_LINK"] = $cleanPhone;
-//		$this->arResult["EMAIL"]      = $textEmail;
 
 		$this->arResult = [
 			"PHONE_NUMBER" => $textPhone,
-			"EMAIL" => $textEmail,
-			"PHONE_LINK" => $cleanPhone,
+			"EMAIL"        => $textEmail,
+			"PHONE_LINK"   => $cleanPhone,
 		];
 		$this->includeComponentTemplate();
 	}

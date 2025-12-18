@@ -4295,7 +4295,8 @@ body {
   line-height: 1;
   cursor: pointer;
   font-weight: 600;
-  padding: calc(10 / var(--base-font-size) * 1rem);
+  /*padding: calc(10 / var(--base-font-size) * 1rem);*/
+    padding: calc(10 / var(--base-font-size) * 1rem);
   font-size: calc(16 / var(--base-font-size) * 1rem);
   min-height: calc(56 / var(--base-font-size) * 1rem);
   -webkit-transition: 0.3s all;
